@@ -1,0 +1,76 @@
+about:
+  description: The Ruby Programming Language
+  license: NOASSERTION
+  homepage: https://www.ruby-lang.org/
+  head: d039466
+  archived: false
+  latestVersion: v3_3_12
+  collectedAt: 2026-09-01T05:25:33Z
+timeline:
+  created: 2010-02-27
+  lastCommit: 2026-09-01
+  lastRelease: 2026-07-16
+popularity:
+  star: 23698
+  watcher: 1041
+  fork: 5636
+  release: 80
+  contributor: 1096
+  pullRequest: 5086
+  issue: 0
+language:
+  Ruby: 34113229
+  C: 17671806
+  Rust: 4592440
+  C++: 1559517
+  Yacc: 523469
+  HTML: 255471
+  Makefile: 203054
+  M4: 202403
+  Roff: 141480
+  Go Template: 137194
+  Python: 94128
+  GDB: 35742
+  Assembly: 26684
+  Batchfile: 25970
+  Shell: 16024
+  Emacs Lisp: 4294
+  Scheme: 557
+  Raku: 506
+  Perl: 178
+  sed: 103
+  Dockerfile: 84
+totalLine: 59604333
+recent:
+  last30d:
+    since: 2026-08-02
+    release: 0
+    mergedPR: 323
+    openPR: 70
+    closedIssue: 0
+    openIssue: 0
+    commit: 730
+  last90d:
+    since: 2026-06-03
+    release: 3
+    mergedPR: 1117
+    openPR: 171
+    closedIssue: 0
+    openIssue: 0
+    commit: 2837
+  last180d:
+    since: 2026-03-05
+    release: 10
+    mergedPR: 1836
+    openPR: 218
+    closedIssue: 0
+    openIssue: 0
+    commit: 4745
+  last360d:
+    since: 2025-09-06
+    release: 20
+    mergedPR: 3387
+    openPR: 310
+    closedIssue: 0
+    openIssue: 0
+    commit: 8320
