@@ -2,30 +2,30 @@ about:
   description: "The Ruby Programming Language"
   license: NOASSERTION
   homepage: https://www.ruby-lang.org/
-  head: 675e82b
+  head: b57404b
   archived: false
   latestVersion: "v3_3_12"
-  collectedAt: 2026-09-07T05:01:27Z
+  collectedAt: 2026-09-07T19:24:00Z
 timeline:
   created: 2010-02-27
   lastCommit: 2026-09-07
   lastRelease: 2026-07-16
 popularity:
-  star: 23704
+  star: 23705
   watcher: 1043
-  fork: 5634
+  fork: 5635
   release: 80
-  contributor: 1098
-  pullRequest: 18597
+  contributor: 1099
+  pullRequest: 18601
   issue: 0
 language:
-  Ruby: 34444170
-  C: 17695819
+  Ruby: 34446503
+  C: 17698583
   Rust: 4648189
   C++: 1559517
   Yacc: 523668
   HTML: 255471
-  Makefile: 203685
+  Makefile: 203947
   M4: 202885
   Roff: 142900
   Go Template: 137194
@@ -40,76 +40,76 @@ language:
   Perl: 178
   sed: 103
   Dockerfile: 84
-totalBytes: 60017886
+totalBytes: 60023245
 recent:
   last30d:
     since: 2026-08-08
     release: 0
-    mergedPR: 280
+    mergedPR: 284
     openPR: 76
     closedIssue: 0
     openIssue: 0
-    commit: 731
+    commit: 751
   last60d:
     since: 2026-07-09
     release: 2
-    mergedPR: 683
+    mergedPR: 687
     openPR: 124
     closedIssue: 0
     openIssue: 0
-    commit: 1705
+    commit: 1725
   last90d:
     since: 2026-06-09
     release: 3
-    mergedPR: 1118
+    mergedPR: 1122
     openPR: 177
     closedIssue: 0
     openIssue: 0
-    commit: 2805
+    commit: 2825
   last180d:
     since: 2026-03-11
     release: 10
-    mergedPR: 1836
-    openPR: 225
+    mergedPR: 1840
+    openPR: 224
     closedIssue: 0
     openIssue: 0
-    commit: 4816
+    commit: 4838
   last360d:
     since: 2025-09-12
     release: 20
-    mergedPR: 3369
-    openPR: 320
+    mergedPR: 3373
+    openPR: 319
     closedIssue: 0
     openIssue: 0
-    commit: 8393
+    commit: 8415
   last720d:
     since: 2024-09-17
     release: 37
-    mergedPR: 5857
-    openPR: 412
+    mergedPR: 5861
+    openPR: 411
     closedIssue: 0
     openIssue: 0
-    commit: 14299
+    commit: 14315
 total:
   release: 80
-  mergedPR: 13493
-  openPR: 697
+  mergedPR: 13497
+  openPR: 696
   closedIssue: 0
   openIssue: 0
-  commit: 101663
+  commit: 101679
 ---
 path: /home/runner/.x-repo/github.com/ruby/ruby
-collectedAt: 2026-09-07T05:06:27Z
+collectedAt: 2026-09-07T19:28:00Z
 loc:
   Ruby:
-    code: 1193711
-    comments: 74937
-    blanks: 198974
+    code: 1193780
+    comments: 74941
+    blanks: 198976
     files: 7424
   C:
-    code: 359096
-    comments: 90778
-    blanks: 56409
+    code: 359140
+    comments: 90793
+    blanks: 56420
     files: 515
   Rust:
     code: 103903
@@ -137,9 +137,9 @@ loc:
     blanks: 550
     files: 44
   Makefile:
-    code: 2654
-    comments: 238
-    blanks: 570
+    code: 2658
+    comments: 240
+    blanks: 572
     files: 12
   ModuleDef:
     code: 2010
@@ -263,7 +263,7 @@ loc:
     files: 1
   Markdown:
     code: 0
-    comments: 14706
+    comments: 14707
     blanks: 5460
     files: 120
   Text:
@@ -272,9 +272,9 @@ loc:
     blanks: 4405
     files: 1410
 total:
-  code: 1794298
-  comments: 245166
-  blanks: 292110
+  code: 1794415
+  comments: 245188
+  blanks: 292125
   files: 10926
 ---
 date: "2026-09-04T03:44:10Z"
@@ -452,7 +452,7 @@ checks:
       - 'Info: found contributions from: DataDog, Hubble-inc, PalyFunbotics, RubyData, Shopify, activeadmin, activeadmin-plugins, activeldap, antipop-rubykaigi, apache, arctosalliance, asakusarb, automaticruby, benchmark-driver, bitpoker, bostonrb, bundler, clear-code, codegenie-io, cucumber, datadog, datafusion-contrib, deep-cover, documenting-ruby, facebook, fastladder, fastly, feedjira, formtastic, gem-coop, gitbits, haml, heyinc, hiki, huginn, idaemons, intercom, itamae-kitchen, itamae-plugins, jenkinsci, logaling, machimachi-inc, milter-manager, miraikoji, moneyforward, mozart, mrbgems, mroonga, mruby, msgpack, nacl, nadoka, natalie-lang, needhamcircle, nihon ruby-no-kai, nroonga, oss-gate, pgroonga, prettier, rabbit-shocker, rack, rails, railsgirls, railsgirls-jp, rake-compiler, ranguba, rbenv, rcairo, rdoc, reazon-research, red-data-tools, redis-rb, rgeo, rr, rubima, rubinius, ruby, ruby @rubygems @rbenv @88labs @andpad-dev, ruby associationnacl, ruby development, ruby-bench, ruby-concurrency, ruby-gettext, ruby-gnome, ruby-no-kai, ruby-syntax-tree, rubybib, rubygems, rubykaigi, rubykansai, rurema, sacloud, sakura-internet, seattlerb, senseicompsci, senseijava, serverspruce, shopify, slim-template, space pirates ., sparklemotion, spinel-coop, stores, taiyaki, tdiary, test-unit, truffleruby, ubicloud, uim, warningfree, wedinc'
 ---
 eget:
-  collectedAt: 2026-09-07T05:06:29+00:00
+  collectedAt: 2026-09-07T19:28:02+00:00
   platform:
     darwin/arm64:
       name:  null
