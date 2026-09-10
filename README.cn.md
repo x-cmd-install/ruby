@@ -12,42 +12,15 @@ The Ruby Programming Language
 x install ruby
 ```
 
-## 源代码
-
-- **上游仓库**: <https://github.com/ruby/ruby>
-- **官网**: <https://www.ruby-lang.org/>
-- **许可证**: NOASSERTION
-
-## 发布
-
-- **最新版本**: `v3_3_12` (2026-07-16)
-- **最近提交**: 2026-09-10
-
-## 流行度
-
-- **Star**: 23,718 · **Fork**: 5,636 · **开放 issue**: 0 · **贡献者**: 1,102
-
-## 累计统计
-
-- **发布数**: 80 · **已合并 PR**: 13560 · **开放 PR**: 720 · **已关闭 issue**: 0 · **开放 issue**: 0 · **提交数**: 101822
-
-## 最近活动
-
-| 时间窗口 | 起始 | 发布 | 已合并 PR | 开放 PR | 已关闭 issue | 开放 issue | 提交 |
-|---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-08-11 | 0 | 325 | 100 | 0 | 0 | 949 |
-| 90d | 2026-06-12 | 3 | 1142 | 195 | 0 | 0 | 3034 |
-| 360d | 2025-09-15 | 20 | 3410 | 344 | 0 | 0 | 8628 |
-
 ## 代码规模
 
-合计: **1,794,886** 行代码（覆盖前 5 种语言、共 **8573** 个文件）。
+合计: **1,794,929** 行代码（覆盖前 5 种语言、共 **8573** 个文件）。
 
 | 语言 | 代码 | 注释 | 空行 | 文件数 |
 |------|-----:|-----:|-----:|------:|
-| Ruby | 1,195,879 | 75,073 | 199,409 | 7433 |
+| Ruby | 1,195,919 | 75,066 | 199,417 | 7433 |
 | C | 359,939 | 91,023 | 56,539 | 515 |
-| Rust | 104,028 | 7,920 | 12,964 | 154 |
+| Rust | 104,028 | 7,921 | 12,964 | 154 |
 | CHeader | 93,644 | 32,149 | 8,516 | 469 |
 | Happy | 14,680 | 0 | 1,615 | 2 |
 
@@ -61,6 +34,55 @@ x install ruby
 - **Packaging** (-1/10) — packaging workflow not detected
 - **Token-Permissions** (0/10) — detected GitHub workflow tokens with excessive permissions
 
+## 源代码
+
+- **上游仓库**: <https://github.com/ruby/ruby>
+- **官网**: <https://www.ruby-lang.org/>
+- **许可证**: NOASSERTION
+
+## 发布
+
+- **最新版本**: `v3_3_12` (2026-07-16)
+- **最近提交**: 2026-09-10
+
+## 流行度
+
+- **Star**: 23,719 · **Fork**: 5,636 · **开放 issue**: 0 · **贡献者**: 1,101
+
+## 累计统计
+
+- **发布数**: 80 · **已合并 PR**: 13561 · **开放 PR**: 725 · **已关闭 issue**: 0 · **开放 issue**: 0 · **提交数**: 101824
+
+## 最近活动
+
+| 时间窗口 | 起始 | 发布 | 已合并 PR | 开放 PR | 已关闭 issue | 开放 issue | 提交 |
+|---|---|---:|---:|---:|---:|---:|---:|
+| 30d | 2026-08-11 | 0 | 326 | 105 | 0 | 0 | 951 |
+| last60d | 2026-07-12 | 2 | 702 | 149 | 0 | 0 | 1935 |
+| 90d | 2026-06-12 | 3 | 1143 | 200 | 0 | 0 | 3036 |
+| last180d | 2026-03-14 | 9 | 1891 | 254 | 0 | 0 | 5051 |
+| 360d | 2025-09-15 | 20 | 3411 | 349 | 0 | 0 | 8627 |
+| last720d | 2024-09-20 | 37 | 5908 | 440 | 0 | 0 | 14398 |
+
+## 发行版状态
+
+在 [repology.org](https://repology.org/project/ruby) 上共有 **867** 个发行版报告此项目。**43** 个 ✅ 已是最新上游版本，**517** 个 ⚠️ 使用旧版本。
+
+| 发行版 | 版本 | 状态 |
+|--------|------|------|
+| Debian unstable | `3.3.8` | ⚠️ outdated |
+| Debian 14 | `3.3.8` | ⚠️ outdated |
+| Debian 13 | `3.3.8` | ⚠️ outdated |
+| Ubuntu 26.04 LTS | `3.3.8` | ⚠️ outdated |
+| Ubuntu 24.04 LTS | `3.2.3` | ⚠️ outdated |
+| Arch | `3.4.10` | ⚠️ outdated |
+| Homebrew | `4.0.6` | ✅ latest |
+| Fedora rawhide | `4.0.6` | ✅ latest |
+| Nix unstable | `3.3.10` | 🪦 legacy |
+| Void | `3.4.10` | ⚠️ outdated |
+| Alpine edge | `3.4.10` | ⚠️ outdated |
+| openSUSE Tumbleweed | `4.0.6` | ✅ latest |
+
 ## 改进这些数据
 
 ruby 的安装元数据由 [x-cmd/install](https://github.com/x-cmd/install) 索引维护——这是一份由 x-cmd 在安装时读取的精选 YAML 包列表。如果 `ruby` 缺失、过期，或安装行为有问题，欢迎在该 repo 提 issue 或 PR：
@@ -70,4 +92,4 @@ ruby 的安装元数据由 [x-cmd/install](https://github.com/x-cmd/install) 索
 
 本页面的数据（card / loc / scorecard / release）由 [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) 自动采集，每日重新生成。**安装行为**（版本选择、平台差异、依赖处理）的改进应提交到上游索引。
 
-_数据快照: `data/card/260910.yml` · 2026-09-10T17:03:44Z._
+_数据快照: `data/card/260910.yml` · 2026-09-10T21:44:55Z._
