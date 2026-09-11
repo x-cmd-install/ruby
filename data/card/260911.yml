@@ -2,12 +2,12 @@ about:
   description: "The Ruby Programming Language"
   license: NOASSERTION
   homepage: https://www.ruby-lang.org/
-  head: f3ebfe5
+  head: 438745d
   archived: false
   latestVersion: "v3_3_12"
   latestRelease: "v3_3_12"
   latestPrerelease: "v4.0.0-preview3"
-  collectedAt: 2026-09-11T04:57:27Z
+  collectedAt: 2026-09-11T20:00:29Z
 timeline:
   created: 2010-02-27
   lastCommit: 2026-09-11
@@ -15,17 +15,17 @@ timeline:
   lastRelease: 2026-07-16
   lastPrerelease: 2025-12-25
 popularity:
-  star: 23720
-  watcher: 1043
-  fork: 5636
+  star: 23724
+  watcher: 1044
+  fork: 5638
   release: 80
-  contributor: 1102
-  pullRequest: 18707
+  contributor: 1103
+  pullRequest: 18717
   issue: 0
 language:
-  Ruby: 34536279
-  C: 17744330
-  Rust: 4653512
+  Ruby: 34543945
+  C: 17744450
+  Rust: 4658693
   C++: 1561400
   Yacc: 526118
   HTML: 255471
@@ -44,85 +44,85 @@ language:
   Perl: 178
   sed: 103
   Dockerfile: 84
-totalBytes: 60169593
+totalBytes: 60182560
 recent:
   last30d:
     since: 2026-08-12
     release: 0
-    mergedPR: 322
+    mergedPR: 330
     openPR: 97
     closedIssue: 0
     openIssue: 0
-    commit: 990
+    commit: 1009
   last60d:
     since: 2026-07-13
     release: 2
-    mergedPR: 698
+    mergedPR: 706
     openPR: 141
     closedIssue: 0
     openIssue: 0
-    commit: 1974
+    commit: 1993
   last90d:
     since: 2026-06-13
     release: 3
-    mergedPR: 1148
-    openPR: 194
+    mergedPR: 1157
+    openPR: 193
     closedIssue: 0
     openIssue: 0
-    commit: 3075
+    commit: 3094
   last180d:
     since: 2026-03-15
     release: 9
-    mergedPR: 1898
-    openPR: 248
+    mergedPR: 1907
+    openPR: 247
     closedIssue: 0
     openIssue: 0
-    commit: 5090
+    commit: 5109
   last360d:
     since: 2025-09-16
     release: 19
-    mergedPR: 3411
-    openPR: 343
+    mergedPR: 3420
+    openPR: 342
     closedIssue: 0
     openIssue: 0
-    commit: 8666
+    commit: 8685
   last720d:
     since: 2024-09-21
     release: 37
-    mergedPR: 5915
-    openPR: 434
+    mergedPR: 5924
+    openPR: 433
     closedIssue: 0
     openIssue: 0
-    commit: 14397
+    commit: 14414
 total:
   release: 80
-  mergedPR: 13571
-  openPR: 719
+  mergedPR: 13580
+  openPR: 718
   closedIssue: 0
   openIssue: 0
-  commit: 101844
+  commit: 101861
 ---
 path: /home/runner/.x-repo/github.com/ruby/ruby
-collectedAt: 2026-09-11T05:00:23Z
+collectedAt: 2026-09-11T20:03:54Z
 loc:
   Ruby:
-    code: 1195928
-    comments: 75081
-    blanks: 199413
+    code: 1196122
+    comments: 75098
+    blanks: 199450
     files: 7433
   C:
-    code: 359900
-    comments: 91025
-    blanks: 56535
+    code: 359918
+    comments: 91019
+    blanks: 56534
     files: 515
   Rust:
-    code: 104028
-    comments: 7921
-    blanks: 12964
+    code: 104155
+    comments: 7931
+    blanks: 12975
     files: 154
   CHeader:
-    code: 93644
-    comments: 32149
+    code: 93641
+    comments: 32148
     blanks: 8516
     files: 469
   Happy:
@@ -131,8 +131,8 @@ loc:
     blanks: 1615
     files: 2
   Yaml:
-    code: 8884
-    comments: 128
+    code: 8892
+    comments: 130
     blanks: 671
     files: 242
   RubyHtml:
@@ -267,7 +267,7 @@ loc:
     files: 1
   Markdown:
     code: 0
-    comments: 15025
+    comments: 15028
     blanks: 5612
     files: 121
   Text:
@@ -276,9 +276,9 @@ loc:
     blanks: 4405
     files: 1410
 total:
-  code: 1797669
-  comments: 245959
-  blanks: 292847
+  code: 1798013
+  comments: 245984
+  blanks: 292894
   files: 10936
 ---
 date: "2026-09-11T03:44:30Z"
