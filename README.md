@@ -14,15 +14,15 @@ x install ruby
 
 ## Code insight
 
-Total: **1,814,519** lines of code across **8612** files in the top 5 languages.
+Total: **1,815,564** lines of code across **8613** files in the top 5 languages.
 
 | Language | Code | Comments | Blanks | Files |
 |----------|-----:|---------:|-------:|------:|
-| Ruby | 1,205,064 | 75,185 | 200,610 | 7451 |
-| C | 364,242 | 92,682 | 57,322 | 527 |
-| Rust | 109,582 | 8,166 | 13,220 | 155 |
-| CHeader | 93,938 | 32,457 | 8,608 | 477 |
-| Happy | 14,696 | 0 | 1,615 | 2 |
+| Ruby | 1,205,527 | 75,221 | 200,681 | 7451 |
+| C | 364,287 | 92,754 | 57,335 | 527 |
+| Rust | 110,117 | 8,162 | 13,244 | 156 |
+| CHeader | 93,937 | 32,450 | 8,627 | 477 |
+| Happy | 14,699 | 0 | 1,616 | 2 |
 
 ## OpenSSF Scorecard
 
@@ -43,26 +43,26 @@ Lowest-scoring checks:
 ## Release
 
 - **Latest**: `v4.1.0-preview1` (2026-09-23)
-- **Last commit**: 2026-10-13
+- **Last commit**: 2026-10-14
 
 ## Popularity
 
-- **Stars**: 23,771 · **Forks**: 5,656 · **Open issues**: 0 · **Contributors**: 1,120
+- **Stars**: 23,776 · **Forks**: 5,659 · **Open issues**: 0 · **Contributors**: 1,120
 
 ## Totals (cumulative)
 
-- **Releases**: 83 · **Merged PRs**: 14052 · **Open PRs**: 742 · **Closed issues**: 0 · **Open issues**: 0 · **Commits**: 102952
+- **Releases**: 83 · **Merged PRs**: 14074 · **Open PRs**: 739 · **Closed issues**: 0 · **Open issues**: 0 · **Commits**: 103059
 
 ## Recent activity
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-09-13 | 3 | 388 | 95 | 0 | 0 | 1090 |
-| last60d | 2026-08-14 | 3 | 773 | 145 | 0 | 0 | 2389 |
-| 90d | 2026-07-15 | 4 | 1128 | 183 | 0 | 0 | 3293 |
-| last180d | 2026-04-16 | 9 | 2087 | 268 | 0 | 0 | 5741 |
-| 360d | 2025-10-18 | 21 | 3626 | 359 | 0 | 0 | 9630 |
-| last720d | 2024-10-23 | 39 | 6134 | 462 | 0 | 0 | 14875 |
+| 30d | 2026-09-14 | 3 | 394 | 86 | 0 | 0 | 1208 |
+| last60d | 2026-08-15 | 3 | 790 | 142 | 0 | 0 | 2507 |
+| 90d | 2026-07-16 | 4 | 1117 | 180 | 0 | 0 | 3411 |
+| last180d | 2026-04-17 | 9 | 2106 | 265 | 0 | 0 | 5859 |
+| 360d | 2025-10-19 | 21 | 3644 | 356 | 0 | 0 | 9757 |
+| last720d | 2024-10-24 | 39 | 6154 | 459 | 0 | 0 | 14946 |
 
 ## Improve this data
 
@@ -73,4 +73,4 @@ Install metadata for ruby lives in the [x-cmd/install](https://github.com/x-cmd/
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/261013.yml` · 2026-10-13T07:14:39Z._
+_Snapshot: `data/card/261014.yml` · 2026-10-14T05:07:42Z._
