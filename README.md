@@ -43,26 +43,26 @@ Lowest-scoring checks:
 ## Release
 
 - **Latest**: `v3_3_13` (2026-10-23)
-- **Last commit**: 2026-10-31
+- **Last commit**: 2026-11-01
 
 ## Popularity
 
-- **Stars**: 23,797 · **Forks**: 5,682 · **Open issues**: 0 · **Contributors**: 1,139
+- **Stars**: 23,799 · **Forks**: 5,680 · **Open issues**: 0 · **Contributors**: 1,139
 
 ## Totals (cumulative)
 
-- **Releases**: 87 · **Merged PRs**: 14293 · **Open PRs**: 781 · **Closed issues**: 0 · **Open issues**: 0 · **Commits**: 103475
+- **Releases**: 87 · **Merged PRs**: 14295 · **Open PRs**: 783 · **Closed issues**: 0 · **Open issues**: 0 · **Commits**: 103476
 
 ## Recent activity
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-10-01 | 5 | 318 | 98 | 0 | 0 | 1090 |
-| last60d | 2026-09-01 | 7 | 797 | 171 | 0 | 0 | 2523 |
-| 90d | 2026-08-02 | 7 | 1154 | 208 | 0 | 0 | 3596 |
-| last180d | 2026-05-04 | 12 | 2250 | 305 | 0 | 0 | 6244 |
-| 360d | 2025-11-05 | 24 | 3699 | 395 | 0 | 0 | 9927 |
-| last720d | 2024-11-10 | 41 | 6287 | 501 | 0 | 0 | 15018 |
+| 30d | 2026-10-02 | 5 | 307 | 99 | 0 | 0 | 796 |
+| last60d | 2026-09-02 | 7 | 790 | 172 | 0 | 0 | 2251 |
+| 90d | 2026-08-03 | 7 | 1135 | 210 | 0 | 0 | 3287 |
+| last180d | 2026-05-05 | 12 | 2238 | 307 | 0 | 0 | 6102 |
+| 360d | 2025-11-06 | 24 | 3681 | 397 | 0 | 0 | 9721 |
+| last720d | 2024-11-11 | 41 | 6283 | 503 | 0 | 0 | 15015 |
 
 ## Distribution status
 
@@ -92,4 +92,4 @@ Install metadata for ruby lives in the [x-cmd/install](https://github.com/x-cmd/
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/261031.yml` · 2026-10-31T05:52:19Z._
+_Snapshot: `data/card/261101.yml` · 2026-11-01T06:15:21Z._
