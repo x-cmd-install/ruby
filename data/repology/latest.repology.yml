@@ -1,13 +1,43 @@
-- repo: starkos
-  subrepo: main
+- repo: nix_stable_24_11
+  srcname: ruby_3_2
+  visiblename: ruby
+  version: 3.2.8
+  origversion: null
+  status: legacy
+  summary: Object-oriented language for quick and easy programming
+  maintainers:
+    - m.fellinger@gmail.com
+  licenses:
+    - Ruby
+- repo: aix_osp
+  srcname: ruby
+  visiblename: ruby
+  version: 2.0.0.353
+  origversion: 2.0.0.353-1
+  status: legacy
+  vulnerable: true
+- repo: aerynos
   srcname: ruby
   visiblename: ruby
   version: 4.0.9
-  origversion: 4.0.9-1
+  origversion: null
   status: newest
-  summary: Ruby development environment
+  summary: An object-oriented language for quick and easy programming
+  licenses:
+    - Ruby
+- repo: alpine_3_19
+  subrepo: main
+  srcname: ruby
+  binname: ruby-libs
+  visiblename: ruby-libs
+  version: 3.2.8
+  origversion: 3.2.8-r0
+  status: outdated
+  summary: Libraries necessary to run Ruby
   maintainers:
-    - starkos@disroot.org
+    - jakub@jirutka.cz
+  licenses:
+    - Ruby AND BSD-2-Clause AND MIT
 - repo: almalinux_8
   subrepo: AppStream
   srcname: ruby
@@ -78,15 +108,6 @@
     - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
   categories:
     - Unspecified
-- repo: aerynos
-  srcname: ruby
-  visiblename: ruby
-  version: 4.0.9
-  origversion: null
-  status: newest
-  summary: An object-oriented language for quick and easy programming
-  licenses:
-    - Ruby
 - repo: almalinux_8
   subrepo: AppStream
   srcname: ruby
@@ -101,19 +122,6 @@
     - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
   categories:
     - Unspecified
-- repo: alpine_3_19
-  subrepo: main
-  srcname: ruby
-  binname: ruby-libs
-  visiblename: ruby-libs
-  version: 3.2.8
-  origversion: 3.2.8-r0
-  status: outdated
-  summary: Libraries necessary to run Ruby
-  maintainers:
-    - jakub@jirutka.cz
-  licenses:
-    - Ruby AND BSD-2-Clause AND MIT
 - repo: almalinux_9
   subrepo: AppStream
   srcname: ruby
@@ -192,19 +200,6 @@
     - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
   categories:
     - Unspecified
-- repo: alpine_3_17
-  subrepo: main
-  srcname: ruby
-  binname: ruby
-  visiblename: ruby
-  version: 3.1.5
-  origversion: 3.1.5-r0
-  status: outdated
-  summary: An object-oriented language for quick and easy programming
-  maintainers:
-    - jakub@jirutka.cz
-  licenses:
-    - Ruby AND BSD-2-Clause AND MIT
 - repo: almalinux_9
   subrepo: AppStream
   srcname: ruby
@@ -310,19 +305,19 @@
     - jakub@jirutka.cz
   licenses:
     - Ruby AND BSD-2-Clause AND MIT
-- repo: alpine_3_17
+- repo: alpine_3_19
   subrepo: main
   srcname: ruby
-  binname: ruby-libs
-  visiblename: ruby-libs
-  version: 3.1.5
-  origversion: 3.1.5-r0
+  binname: ruby-rdoc
+  visiblename: ruby-rdoc
+  version: 3.2.8
+  origversion: 3.2.8-r0
   status: outdated
-  summary: Libraries necessary to run Ruby
+  summary: Ruby documentation tool
   maintainers:
     - jakub@jirutka.cz
   licenses:
-    - Ruby AND BSD-2-Clause AND MIT
+    - Ruby
 - repo: alpine_3_17
   subrepo: main
   srcname: ruby
@@ -384,6 +379,32 @@
   origversion: 3.1.5-r0
   status: outdated
   summary: An object-oriented language for quick and easy programming (documentation)
+  maintainers:
+    - jakub@jirutka.cz
+  licenses:
+    - Ruby AND BSD-2-Clause AND MIT
+- repo: alpine_3_17
+  subrepo: main
+  srcname: ruby
+  binname: ruby
+  visiblename: ruby
+  version: 3.1.5
+  origversion: 3.1.5-r0
+  status: outdated
+  summary: An object-oriented language for quick and easy programming
+  maintainers:
+    - jakub@jirutka.cz
+  licenses:
+    - Ruby AND BSD-2-Clause AND MIT
+- repo: alpine_3_17
+  subrepo: main
+  srcname: ruby
+  binname: ruby-libs
+  visiblename: ruby-libs
+  version: 3.1.5
+  origversion: 3.1.5-r0
+  status: outdated
+  summary: Libraries necessary to run Ruby
   maintainers:
     - jakub@jirutka.cz
   licenses:
@@ -518,19 +539,6 @@
     - jakub@jirutka.cz
   licenses:
     - Ruby AND BSD-2-Clause AND MIT
-- repo: alpine_3_19
-  subrepo: main
-  srcname: ruby
-  binname: ruby-rdoc
-  visiblename: ruby-rdoc
-  version: 3.2.8
-  origversion: 3.2.8-r0
-  status: outdated
-  summary: Ruby documentation tool
-  maintainers:
-    - jakub@jirutka.cz
-  licenses:
-    - Ruby
 - repo: alpine_3_21
   subrepo: main
   srcname: ruby
@@ -570,149 +578,6 @@
     - jakub@jirutka.cz
   licenses:
     - Ruby AND BSD-2-Clause AND MIT
-- repo: alpine_3_21
-  subrepo: main
-  srcname: ruby
-  binname: ruby-doc
-  visiblename: ruby-doc
-  version: 3.3.13
-  origversion: 3.3.13-r0
-  status: outdated
-  summary: An object-oriented language for quick and easy programming (documentation)
-  maintainers:
-    - jakub@jirutka.cz
-  licenses:
-    - Ruby AND BSD-2-Clause AND MIT
-- repo: alpine_3_21
-  subrepo: main
-  srcname: ruby
-  binname: ruby-full
-  visiblename: ruby-full
-  version: 3.3.13
-  origversion: 3.3.13-r0
-  status: outdated
-  summary: Ruby with all bundled gems
-  maintainers:
-    - jakub@jirutka.cz
-  licenses:
-    - Ruby AND BSD-2-Clause AND MIT
-- repo: alpine_3_21
-  subrepo: main
-  srcname: ruby
-  binname: ruby-libs
-  visiblename: ruby-libs
-  version: 3.3.13
-  origversion: 3.3.13-r0
-  status: outdated
-  summary: Libraries necessary to run Ruby
-  maintainers:
-    - jakub@jirutka.cz
-  licenses:
-    - Ruby AND BSD-2-Clause AND MIT
-- repo: alpine_3_21
-  subrepo: main
-  srcname: ruby
-  binname: ruby-rdoc
-  visiblename: ruby-rdoc
-  version: 3.3.13
-  origversion: 3.3.13-r0
-  status: outdated
-  summary: Ruby documentation tool
-  maintainers:
-    - jakub@jirutka.cz
-  licenses:
-    - Ruby
-- repo: alpine_3_22
-  subrepo: main
-  srcname: ruby
-  binname: ruby
-  visiblename: ruby
-  version: 3.4.12
-  origversion: 3.4.12-r0
-  status: outdated
-  summary: An object-oriented language for quick and easy programming
-  maintainers:
-    - jakub@jirutka.cz
-  licenses:
-    - Ruby AND BSD-2-Clause AND MIT
-- repo: alpine_3_22
-  subrepo: main
-  srcname: ruby
-  binname: ruby-dbg
-  visiblename: ruby-dbg
-  version: 3.4.12
-  origversion: 3.4.12-r0
-  status: outdated
-  summary: An object-oriented language for quick and easy programming (debug symbols)
-  maintainers:
-    - jakub@jirutka.cz
-  licenses:
-    - Ruby AND BSD-2-Clause AND MIT
-- repo: alpine_3_22
-  subrepo: main
-  srcname: ruby
-  binname: ruby-dev
-  visiblename: ruby-dev
-  version: 3.4.12
-  origversion: 3.4.12-r0
-  status: outdated
-  summary: An object-oriented language for quick and easy programming (development files)
-  maintainers:
-    - jakub@jirutka.cz
-  licenses:
-    - Ruby AND BSD-2-Clause AND MIT
-- repo: alpine_3_22
-  subrepo: main
-  srcname: ruby
-  binname: ruby-doc
-  visiblename: ruby-doc
-  version: 3.4.12
-  origversion: 3.4.12-r0
-  status: outdated
-  summary: An object-oriented language for quick and easy programming (documentation)
-  maintainers:
-    - jakub@jirutka.cz
-  licenses:
-    - Ruby AND BSD-2-Clause AND MIT
-- repo: alpine_3_22
-  subrepo: main
-  srcname: ruby
-  binname: ruby-full
-  visiblename: ruby-full
-  version: 3.4.12
-  origversion: 3.4.12-r0
-  status: outdated
-  summary: Ruby with all bundled gems
-  maintainers:
-    - jakub@jirutka.cz
-  licenses:
-    - Ruby AND BSD-2-Clause AND MIT
-- repo: alpine_3_22
-  subrepo: main
-  srcname: ruby
-  binname: ruby-libs
-  visiblename: ruby-libs
-  version: 3.4.12
-  origversion: 3.4.12-r0
-  status: outdated
-  summary: Libraries necessary to run Ruby
-  maintainers:
-    - jakub@jirutka.cz
-  licenses:
-    - Ruby AND BSD-2-Clause AND MIT
-- repo: alpine_3_22
-  subrepo: main
-  srcname: ruby
-  binname: ruby-rdoc
-  visiblename: ruby-rdoc
-  version: 3.4.12
-  origversion: 3.4.12-r0
-  status: outdated
-  summary: Ruby documentation tool
-  maintainers:
-    - jakub@jirutka.cz
-  licenses:
-    - Ruby
 - repo: alpine_3_23
   subrepo: main
   srcname: ruby
@@ -726,6 +591,149 @@
     - jakub@jirutka.cz
   licenses:
     - Ruby AND BSD-2-Clause AND MIT
+- repo: alpine_3_21
+  subrepo: main
+  srcname: ruby
+  binname: ruby-doc
+  visiblename: ruby-doc
+  version: 3.3.13
+  origversion: 3.3.13-r0
+  status: outdated
+  summary: An object-oriented language for quick and easy programming (documentation)
+  maintainers:
+    - jakub@jirutka.cz
+  licenses:
+    - Ruby AND BSD-2-Clause AND MIT
+- repo: alpine_3_21
+  subrepo: main
+  srcname: ruby
+  binname: ruby-full
+  visiblename: ruby-full
+  version: 3.3.13
+  origversion: 3.3.13-r0
+  status: outdated
+  summary: Ruby with all bundled gems
+  maintainers:
+    - jakub@jirutka.cz
+  licenses:
+    - Ruby AND BSD-2-Clause AND MIT
+- repo: alpine_3_21
+  subrepo: main
+  srcname: ruby
+  binname: ruby-libs
+  visiblename: ruby-libs
+  version: 3.3.13
+  origversion: 3.3.13-r0
+  status: outdated
+  summary: Libraries necessary to run Ruby
+  maintainers:
+    - jakub@jirutka.cz
+  licenses:
+    - Ruby AND BSD-2-Clause AND MIT
+- repo: alpine_3_21
+  subrepo: main
+  srcname: ruby
+  binname: ruby-rdoc
+  visiblename: ruby-rdoc
+  version: 3.3.13
+  origversion: 3.3.13-r0
+  status: outdated
+  summary: Ruby documentation tool
+  maintainers:
+    - jakub@jirutka.cz
+  licenses:
+    - Ruby
+- repo: alpine_3_22
+  subrepo: main
+  srcname: ruby
+  binname: ruby
+  visiblename: ruby
+  version: 3.4.12
+  origversion: 3.4.12-r0
+  status: outdated
+  summary: An object-oriented language for quick and easy programming
+  maintainers:
+    - jakub@jirutka.cz
+  licenses:
+    - Ruby AND BSD-2-Clause AND MIT
+- repo: alpine_3_22
+  subrepo: main
+  srcname: ruby
+  binname: ruby-dbg
+  visiblename: ruby-dbg
+  version: 3.4.12
+  origversion: 3.4.12-r0
+  status: outdated
+  summary: An object-oriented language for quick and easy programming (debug symbols)
+  maintainers:
+    - jakub@jirutka.cz
+  licenses:
+    - Ruby AND BSD-2-Clause AND MIT
+- repo: alpine_3_22
+  subrepo: main
+  srcname: ruby
+  binname: ruby-dev
+  visiblename: ruby-dev
+  version: 3.4.12
+  origversion: 3.4.12-r0
+  status: outdated
+  summary: An object-oriented language for quick and easy programming (development files)
+  maintainers:
+    - jakub@jirutka.cz
+  licenses:
+    - Ruby AND BSD-2-Clause AND MIT
+- repo: alpine_3_22
+  subrepo: main
+  srcname: ruby
+  binname: ruby-doc
+  visiblename: ruby-doc
+  version: 3.4.12
+  origversion: 3.4.12-r0
+  status: outdated
+  summary: An object-oriented language for quick and easy programming (documentation)
+  maintainers:
+    - jakub@jirutka.cz
+  licenses:
+    - Ruby AND BSD-2-Clause AND MIT
+- repo: alpine_3_22
+  subrepo: main
+  srcname: ruby
+  binname: ruby-full
+  visiblename: ruby-full
+  version: 3.4.12
+  origversion: 3.4.12-r0
+  status: outdated
+  summary: Ruby with all bundled gems
+  maintainers:
+    - jakub@jirutka.cz
+  licenses:
+    - Ruby AND BSD-2-Clause AND MIT
+- repo: alpine_3_22
+  subrepo: main
+  srcname: ruby
+  binname: ruby-libs
+  visiblename: ruby-libs
+  version: 3.4.12
+  origversion: 3.4.12-r0
+  status: outdated
+  summary: Libraries necessary to run Ruby
+  maintainers:
+    - jakub@jirutka.cz
+  licenses:
+    - Ruby AND BSD-2-Clause AND MIT
+- repo: alpine_3_22
+  subrepo: main
+  srcname: ruby
+  binname: ruby-rdoc
+  visiblename: ruby-rdoc
+  version: 3.4.12
+  origversion: 3.4.12-r0
+  status: outdated
+  summary: Ruby documentation tool
+  maintainers:
+    - jakub@jirutka.cz
+  licenses:
+    - Ruby
 - repo: alpine_3_23
   subrepo: main
   srcname: ruby
@@ -989,12 +997,34 @@
 - repo: arch
   subrepo: extra
   srcname: ruby
+  binname: ruby-bundled-gems
+  visiblename: ruby-bundled-gems
+  version: 3.4.12
+  origversion: 3.4.12-1
+  status: outdated
+  summary: Bundled gems which are part of Ruby StdLib
+  licenses:
+    - BSD-2-Clause
+- repo: arch
+  subrepo: extra
+  srcname: ruby
   binname: ruby-docs
   visiblename: ruby-docs
   version: 3.4.12
   origversion: 3.4.12-1
   status: outdated
   summary: Documentation files for Ruby
+  licenses:
+    - BSD-2-Clause
+- repo: arch
+  subrepo: extra
+  srcname: ruby
+  binname: ruby
+  visiblename: ruby
+  version: 3.4.12
+  origversion: 3.4.12-1
+  status: outdated
+  summary: An object-oriented language for quick and easy programming
   licenses:
     - BSD-2-Clause
 - repo: arch
@@ -1019,24 +1049,24 @@
   summary: Default gems which are part of Ruby StdLib
   licenses:
     - BSD-2-Clause
-- repo: arch
-  subrepo: extra
+- repo: arch_testing
+  subrepo: extra-testing
   srcname: ruby
   binname: ruby-bundled-gems
   visiblename: ruby-bundled-gems
   version: 3.4.12
-  origversion: 3.4.12-1
+  origversion: 3.4.12-2
   status: outdated
   summary: Bundled gems which are part of Ruby StdLib
   licenses:
     - BSD-2-Clause
-- repo: arch
-  subrepo: extra
+- repo: arch_testing
+  subrepo: extra-testing
   srcname: ruby
   binname: ruby
   visiblename: ruby
   version: 3.4.12
-  origversion: 3.4.12-1
+  origversion: 3.4.12-2
   status: outdated
   summary: An object-oriented language for quick and easy programming
   licenses:
@@ -1050,28 +1080,6 @@
   origversion: 3.4.12-2
   status: outdated
   summary: Full Ruby StdLib including default gems, bundled gems and tools
-  licenses:
-    - BSD-2-Clause
-- repo: arch_testing
-  subrepo: extra-testing
-  srcname: ruby
-  binname: ruby-bundled-gems
-  visiblename: ruby-bundled-gems
-  version: 3.4.12
-  origversion: 3.4.12-2
-  status: outdated
-  summary: Bundled gems which are part of Ruby StdLib
-  licenses:
-    - BSD-2-Clause
-- repo: arch_testing
-  subrepo: extra-testing
-  srcname: ruby
-  binname: ruby
-  visiblename: ruby
-  version: 3.4.12
-  origversion: 3.4.12-2
-  status: outdated
-  summary: An object-oriented language for quick and easy programming
   licenses:
     - BSD-2-Clause
 - repo: arch_testing
@@ -1121,6 +1129,61 @@
   licenses:
     - BSD
     - custom
+- repo: artix
+  subrepo: world
+  srcname: ruby
+  binname: ruby
+  visiblename: ruby
+  version: 3.4.12
+  origversion: 3.4.12-1
+  status: outdated
+  summary: An object-oriented language for quick and easy programming
+  licenses:
+    - BSD-2-Clause
+- repo: artix
+  subrepo: world
+  srcname: ruby
+  binname: ruby-default-gems
+  visiblename: ruby-default-gems
+  version: 3.4.12
+  origversion: 3.4.12-1
+  status: outdated
+  summary: Default gems which are part of Ruby StdLib
+  licenses:
+    - BSD-2-Clause
+- repo: artix
+  subrepo: world
+  srcname: ruby
+  binname: ruby-bundled-gems
+  visiblename: ruby-bundled-gems
+  version: 3.4.12
+  origversion: 3.4.12-1
+  status: outdated
+  summary: Bundled gems which are part of Ruby StdLib
+  licenses:
+    - BSD-2-Clause
+- repo: artix
+  subrepo: world
+  srcname: ruby
+  binname: ruby-docs
+  visiblename: ruby-docs
+  version: 3.4.12
+  origversion: 3.4.12-1
+  status: outdated
+  summary: Documentation files for Ruby
+  licenses:
+    - BSD-2-Clause
+- repo: artix
+  subrepo: world
+  srcname: ruby
+  binname: ruby-stdlib
+  visiblename: ruby-stdlib
+  version: 3.4.12
+  origversion: 3.4.12-1
+  status: outdated
+  summary: Full Ruby StdLib including default gems, bundled gems and tools
+  licenses:
+    - BSD-2-Clause
 - repo: artix
   subrepo: world
   srcname: ruby
@@ -1247,20 +1310,6 @@
     - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
   categories:
     - Unspecified
-- repo: cygwin
-  srcname: ruby
-  binname: ruby-doc
-  visiblename: ruby-doc
-  version: 4.0.9
-  origversion: 4.0.9-1
-  status: newest
-  summary: Interpreted object-oriented scripting language
-  maintainers:
-    - daisuke.fujimura@cygwin
-  licenses:
-    - Ruby
-  categories:
-    - Interpreters
 - repo: centos_stream_8
   subrepo: AppStream
   srcname: ruby
@@ -1275,6 +1324,31 @@
     - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
   categories:
     - Unspecified
+- repo: cygwin
+  srcname: ruby
+  binname: ruby
+  visiblename: ruby
+  version: 4.0.9
+  origversion: 4.0.9-1
+  status: newest
+  summary: Interpreted object-oriented scripting language
+  maintainers:
+    - daisuke.fujimura@cygwin
+  licenses:
+    - Ruby
+  categories:
+    - Interpreters
+- repo: openindiana
+  subrepo: hipster
+  srcname: ruby
+  binname: runtime/ruby-40
+  visiblename: ruby
+  version: 4.0.9
+  origversion: null
+  status: newest
+  summary: Ruby, RubyGems, and Rake
+  categories:
+    - Development/Ruby
 - repo: chocolatey
   binname: ruby.portable
   visiblename: Ruby (Portable)
@@ -1282,6 +1356,13 @@
   origversion: null
   status: outdated
   summary: Ruby – A dynamic, open source programming language focusing on simplicity and productivity.
+- repo: homebrew
+  srcname: ruby
+  visiblename: ruby
+  version: HEAD
+  origversion: null
+  status: rolling
+  summary: Powerful, clean, object-oriented scripting language
 - repo: chocolatey
   binname: ruby
   visiblename: Ruby
@@ -1311,20 +1392,6 @@
     - jue@crux.nu
 - repo: cygwin
   srcname: ruby
-  binname: ruby
-  visiblename: ruby
-  version: 4.0.9
-  origversion: 4.0.9-1
-  status: newest
-  summary: Interpreted object-oriented scripting language
-  maintainers:
-    - daisuke.fujimura@cygwin
-  licenses:
-    - Ruby
-  categories:
-    - Interpreters
-- repo: cygwin
-  srcname: ruby
   binname: ruby-debuginfo
   visiblename: ruby-debuginfo
   version: 4.0.9
@@ -1341,6 +1408,20 @@
   srcname: ruby
   binname: ruby-devel
   visiblename: ruby-devel
+  version: 4.0.9
+  origversion: 4.0.9-1
+  status: newest
+  summary: Interpreted object-oriented scripting language
+  maintainers:
+    - daisuke.fujimura@cygwin
+  licenses:
+    - Ruby
+  categories:
+    - Interpreters
+- repo: cygwin
+  srcname: ruby
+  binname: ruby-doc
+  visiblename: ruby-doc
   version: 4.0.9
   origversion: 4.0.9-1
   status: newest
@@ -1399,18 +1480,13 @@
     - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
   categories:
     - Unspecified
-- repo: exherbo
-  subrepo: arbor
-  srcname: dev-lang/ruby
-  visiblename: dev-lang/ruby
-  version: 4.0.9
+- repo: homebrew
+  srcname: ruby@3.1
+  visiblename: ruby@3.1
+  version: 3.1.7
   origversion: null
-  status: newest
-  summary: An object-oriented scripting language
-  maintainers:
-    - fallback-mnt-exherbo@repology
-  categories:
-    - dev-lang
+  status: legacy
+  summary: Powerful, clean, object-oriented scripting language
 - repo: eurolinux_9
   subrepo: appstream
   srcname: ruby
@@ -1524,6 +1600,20 @@
     - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
   categories:
     - Unspecified
+- repo: homebrew
+  srcname: ruby@3.2
+  visiblename: ruby@3.2
+  version: 3.2.11
+  origversion: null
+  status: legacy
+  summary: Powerful, clean, object-oriented scripting language
+- repo: homebrew
+  srcname: ruby@3.3
+  visiblename: ruby@3.3
+  version: 3.3.13
+  origversion: null
+  status: legacy
+  summary: Powerful, clean, object-oriented scripting language
 - repo: exherbo
   subrepo: arbor
   srcname: dev-lang/ruby
@@ -1543,6 +1633,18 @@
   version: 3.4.12
   origversion: null
   status: legacy
+  summary: An object-oriented scripting language
+  maintainers:
+    - fallback-mnt-exherbo@repology
+  categories:
+    - dev-lang
+- repo: exherbo
+  subrepo: arbor
+  srcname: dev-lang/ruby
+  visiblename: dev-lang/ruby
+  version: 4.0.9
+  origversion: null
+  status: newest
   summary: An object-oriented scripting language
   maintainers:
     - fallback-mnt-exherbo@repology
@@ -1624,6 +1726,26 @@
     - (Ruby OR BSD-2-Clause) AND BSD-3-Clause AND ISC AND Public Domain AND MIT and CC0 AND zlib AND Unicode-DFS-2015
   categories:
     - Unspecified
+- repo: homebrew
+  srcname: ruby@3.4
+  visiblename: ruby@3.4
+  version: 3.4.12
+  origversion: null
+  status: legacy
+  summary: Powerful, clean, object-oriented scripting language
+- repo: kaos
+  subrepo: core
+  srcname: ruby
+  binname: ruby-docs
+  visiblename: ruby-docs
+  version: 4.0.9
+  origversion: 4.0.9-1
+  status: newest
+  summary: Documentation files for ruby
+  maintainers:
+    - demm@kaosx.us
+  licenses:
+    - custom
 - repo: fedora_43
   subrepo: updates
   srcname: ruby
@@ -1661,6 +1783,28 @@
     - (Ruby OR BSD-2-Clause) AND (Ruby OR BSD-2-Clause OR GPL-1.0-or-later) AND BSD-3-Clause AND (GPL-3.0-or-later WITH Bison-exception-2.2) AND ISC AND LicenseRef-Fedora-Public-Domain AND MIT AND CC0 AND zlib AND Unicode-DFS-2015 AND HPND-Markus-Kuhn AND Ruby-pty
   categories:
     - Unspecified
+- repo: kaos
+  subrepo: core
+  srcname: ruby
+  binname: ruby
+  visiblename: ruby
+  version: 4.0.9
+  origversion: 4.0.9-1
+  status: newest
+  summary: An object-oriented language for quick and easy programming
+  maintainers:
+    - demm@kaosx.us
+  licenses:
+    - custom
+- repo: gnuguix
+  srcname: ruby
+  binname: ruby
+  visiblename: ruby
+  version: 4.0.5
+  origversion: null
+  status: outdated
+  summary: Programming language interpreter
+  vulnerable: true
 - repo: fedora_44
   subrepo: updates
   srcname: ruby
@@ -1854,67 +1998,6 @@
   origversion: null
   status: newest
   summary: Powerful, clean, object-oriented scripting language
-- repo: homebrew
-  srcname: ruby
-  visiblename: ruby
-  version: HEAD
-  origversion: null
-  status: rolling
-  summary: Powerful, clean, object-oriented scripting language
-- repo: homebrew
-  srcname: ruby@3.1
-  visiblename: ruby@3.1
-  version: 3.1.7
-  origversion: null
-  status: legacy
-  summary: Powerful, clean, object-oriented scripting language
-- repo: homebrew
-  srcname: ruby@3.2
-  visiblename: ruby@3.2
-  version: 3.2.11
-  origversion: null
-  status: legacy
-  summary: Powerful, clean, object-oriented scripting language
-- repo: homebrew
-  srcname: ruby@3.3
-  visiblename: ruby@3.3
-  version: 3.3.13
-  origversion: null
-  status: legacy
-  summary: Powerful, clean, object-oriented scripting language
-- repo: homebrew
-  srcname: ruby@3.4
-  visiblename: ruby@3.4
-  version: 3.4.12
-  origversion: null
-  status: legacy
-  summary: Powerful, clean, object-oriented scripting language
-- repo: kaos
-  subrepo: core
-  srcname: ruby
-  binname: ruby-docs
-  visiblename: ruby-docs
-  version: 4.0.9
-  origversion: 4.0.9-1
-  status: newest
-  summary: Documentation files for ruby
-  maintainers:
-    - demm@kaosx.us
-  licenses:
-    - custom
-- repo: kaos
-  subrepo: core
-  srcname: ruby
-  binname: ruby
-  visiblename: ruby
-  version: 4.0.9
-  origversion: 4.0.9-1
-  status: newest
-  summary: An object-oriented language for quick and easy programming
-  maintainers:
-    - demm@kaosx.us
-  licenses:
-    - custom
 - repo: liguros_stable
   srcname: dev-lang/ruby
   visiblename: dev-lang/ruby
@@ -2001,6 +2084,16 @@
     - BSD
   categories:
     - lang
+- repo: msys2_clang64
+  srcname: mingw-w64-ruby
+  binname: mingw-w64-clang-x86_64-ruby
+  visiblename: mingw-w64-clang-x86_64-ruby
+  version: 4.0.9
+  origversion: 4.0.9-1
+  status: newest
+  summary: An object-oriented language for quick and easy programming (mingw-w64)
+  licenses:
+    - spdx:Ruby AND BSD-2-Clause
 - repo: macports
   srcname: lang/ruby27
   binname: ruby27
@@ -2018,16 +2111,6 @@
     - BSD
   categories:
     - lang
-- repo: msys2_clangarm64
-  srcname: mingw-w64-ruby
-  binname: mingw-w64-clang-aarch64-ruby
-  visiblename: mingw-w64-clang-aarch64-ruby
-  version: 4.0.9
-  origversion: 4.0.9-1
-  status: newest
-  summary: An object-oriented language for quick and easy programming (mingw-w64)
-  licenses:
-    - spdx:Ruby AND BSD-2-Clause
 - repo: macports
   srcname: lang/ruby30
   binname: ruby30
@@ -2389,10 +2472,10 @@
   licenses:
     - BSD
     - custom
-- repo: msys2_clang64
+- repo: msys2_clangarm64
   srcname: mingw-w64-ruby
-  binname: mingw-w64-clang-x86_64-ruby
-  visiblename: mingw-w64-clang-x86_64-ruby
+  binname: mingw-w64-clang-aarch64-ruby
+  visiblename: mingw-w64-clang-aarch64-ruby
   version: 4.0.9
   origversion: 4.0.9-1
   status: newest
@@ -2421,6 +2504,28 @@
   summary: An object-oriented language for quick and easy programming (mingw-w64)
   licenses:
     - spdx:Ruby AND BSD-2-Clause
+- repo: msys2_msys2
+  subrepo: x86_64
+  srcname: ruby
+  binname: ruby-docs
+  visiblename: ruby-docs
+  version: 3.4.12
+  origversion: 3.4.12-1
+  status: outdated
+  summary: Documentation files for ruby
+  licenses:
+    - spdx:Ruby OR BSD-2-Clause
+- repo: msys2_msys2
+  subrepo: x86_64
+  srcname: ruby
+  binname: ruby
+  visiblename: ruby
+  version: 3.4.12
+  origversion: 3.4.12-1
+  status: outdated
+  summary: An object-oriented language for quick and easy programming
+  licenses:
+    - spdx:Ruby OR BSD-2-Clause
 - repo: msys2_ucrt64
   srcname: mingw-w64-ruby
   binname: mingw-w64-ucrt-x86_64-ruby
@@ -2459,17 +2564,6 @@
   srcname: ruby_3_1
   visiblename: ruby
   version: 3.1.7
-  origversion: null
-  status: legacy
-  summary: Object-oriented language for quick and easy programming
-  maintainers:
-    - m.fellinger@gmail.com
-  licenses:
-    - Ruby
-- repo: nix_stable_24_11
-  srcname: ruby_3_2
-  visiblename: ruby
-  version: 3.2.8
   origversion: null
   status: legacy
   summary: Object-oriented language for quick and easy programming
@@ -2604,6 +2698,22 @@
     - jeremy@openbsd.org
   categories:
     - lang
+- repo: openkylin_2_0
+  subrepo: nile/main
+  srcname: ruby2.7
+  binnames:
+    - ruby2.7
+    - libruby2.7
+    - ruby2.7-dev
+    - ruby2.7-doc
+  visiblename: ruby2.7
+  version: 2.7.8
+  origversion: 2.7.8-ok1.5
+  status: outdated
+  maintainers:
+    - packaging@lists.openkylin.top
+  categories:
+    - ruby
 - repo: openeuler_24_03_lts
   srcname: ruby
   binnames:
@@ -2674,6 +2784,22 @@
     - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
   categories:
     - Unspecified
+- repo: openkylin_2_0
+  subrepo: nile-proposed/main
+  srcname: ruby2.7
+  binnames:
+    - ruby2.7
+    - libruby2.7
+    - ruby2.7-dev
+    - ruby2.7-doc
+  visiblename: ruby2.7
+  version: 2.7.8
+  origversion: 2.7.8-ok1.5
+  status: outdated
+  maintainers:
+    - packaging@lists.openkylin.top
+  categories:
+    - ruby
 - repo: openeuler_24_09
   srcname: ruby
   binnames:
@@ -2777,49 +2903,6 @@
   summary: Ruby, RubyGems, and Rake
   categories:
     - Development/Ruby
-- repo: openindiana
-  subrepo: hipster
-  srcname: ruby
-  binname: runtime/ruby-40
-  visiblename: ruby
-  version: 4.0.9
-  origversion: null
-  status: newest
-  summary: Ruby, RubyGems, and Rake
-  categories:
-    - Development/Ruby
-- repo: openkylin_2_0
-  subrepo: nile/main
-  srcname: ruby2.7
-  binnames:
-    - ruby2.7
-    - libruby2.7
-    - ruby2.7-dev
-    - ruby2.7-doc
-  visiblename: ruby2.7
-  version: 2.7.8
-  origversion: 2.7.8-ok1.5
-  status: outdated
-  maintainers:
-    - packaging@lists.openkylin.top
-  categories:
-    - ruby
-- repo: openkylin_2_0
-  subrepo: nile-proposed/main
-  srcname: ruby2.7
-  binnames:
-    - ruby2.7
-    - libruby2.7
-    - ruby2.7-dev
-    - ruby2.7-doc
-  visiblename: ruby2.7
-  version: 2.7.8
-  origversion: 2.7.8-ok1.5
-  status: outdated
-  maintainers:
-    - packaging@lists.openkylin.top
-  categories:
-    - ruby
 - repo: openkylin_3_0
   subrepo: huanghe/main
   srcname: ruby2.7
@@ -2870,18 +2953,6 @@
     - GPL
   categories:
     - Applications/Development
-- repo: openwrt_23_05_x86_64
-  subrepo: packages
-  srcname: feeds/packages/lang/ruby
-  binname: ruby-expect
-  visiblename: ruby-expect
-  version: 3.2.6
-  origversion: 3.2.6-1
-  status: outdated
-  maintainers:
-    - luizluca@gmail.com
-  categories:
-    - lang
 - repo: openmamba
   subrepo: base
   srcname: ruby32
@@ -2920,6 +2991,18 @@
     - Ruby or GPLv2+
   categories:
     - Development/Ruby
+- repo: openpkg_current
+  srcname: ruby18
+  visiblename: ruby18
+  version: 1.8.7p358
+  origversion: null
+  status: legacy
+  summary: The Ruby Scripting Language
+  licenses:
+    - GPL
+  categories:
+    - Language
+  vulnerable: true
 - repo: opensuse_tumbleweed
   subrepo: src-oss
   srcname: ruby4.0
@@ -3220,6 +3303,18 @@
 - repo: openwrt_23_05_x86_64
   subrepo: packages
   srcname: feeds/packages/lang/ruby
+  binname: ruby-expect
+  visiblename: ruby-expect
+  version: 3.2.6
+  origversion: 3.2.6-1
+  status: outdated
+  maintainers:
+    - luizluca@gmail.com
+  categories:
+    - lang
+- repo: openwrt_23_05_x86_64
+  subrepo: packages
+  srcname: feeds/packages/lang/ruby
   binname: ruby-fcntl
   visiblename: ruby-fcntl
   version: 3.2.6
@@ -3498,18 +3593,6 @@
   srcname: feeds/packages/lang/ruby
   binname: ruby-net-pop
   visiblename: ruby-net-pop
-  version: 3.2.6
-  origversion: 3.2.6-1
-  status: outdated
-  maintainers:
-    - luizluca@gmail.com
-  categories:
-    - lang
-- repo: openwrt_23_05_x86_64
-  subrepo: packages
-  srcname: feeds/packages/lang/ruby
-  binname: ruby-tmpdir
-  visiblename: ruby-tmpdir
   version: 3.2.6
   origversion: 3.2.6-1
   status: outdated
@@ -4096,6 +4179,18 @@
 - repo: openwrt_23_05_x86_64
   subrepo: packages
   srcname: feeds/packages/lang/ruby
+  binname: ruby-tmpdir
+  visiblename: ruby-tmpdir
+  version: 3.2.6
+  origversion: 3.2.6-1
+  status: outdated
+  maintainers:
+    - luizluca@gmail.com
+  categories:
+    - lang
+- repo: openwrt_23_05_x86_64
+  subrepo: packages
+  srcname: feeds/packages/lang/ruby
   binname: ruby-tsort
   visiblename: ruby-tsort
   version: 3.2.6
@@ -4374,6 +4469,25 @@
     - fallback-mnt-ravenports@repology
   categories:
     - lang
+- repo: pureos_amber
+  subrepo: amber/main
+  srcname: ruby2.3
+  binnames:
+    - libruby2.3
+    - ruby2.3
+    - ruby2.3-dev
+    - ruby2.3-doc
+    - ruby2.3-tcltk
+  visiblename: ruby2.3
+  version: 2.3.6
+  origversion: 2.3.6-2
+  status: legacy
+  maintainers:
+    - terceiro@debian.org
+    - zeha@debian.org
+  categories:
+    - libs
+  vulnerable: true
 - repo: rocky_8
   subrepo: AppStream
   srcname: ruby
@@ -4458,19 +4572,6 @@
     - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
   categories:
     - Unspecified
-- repo: t2
-  srcname: ruby
-  visiblename: ruby
-  version: 4.0.9
-  origversion: null
-  status: newest
-  summary: The Ruby programming language
-  maintainers:
-    - rene@exactco.de
-  licenses:
-    - GPL
-  categories:
-    - extra/development
 - repo: rocky_9
   subrepo: AppStream
   srcname: ruby
@@ -4628,6 +4729,21 @@
     - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
   categories:
     - Unspecified
+- repo: rocky_8
+  subrepo: AppStream
+  srcname: ruby
+  visiblename: ruby
+  version: 3.3.10
+  origversion: 3.3.10-7.module+el8.10.0+40227+8cae5065
+  status: legacy
+  summary: An interpreter of object-oriented scripting language
+  maintainers:
+    - infrastructure@rockylinux.org
+  licenses:
+    - (Ruby OR BSD-2-Clause) AND (Ruby OR BSD-2-Clause OR GPL-1.0-or-later) AND BSD-3-Clause AND (GPL-3.0-or-later WITH Bison-exception-2.2) AND ISC AND LicenseRef-Fedora-Public-Domain AND MIT AND CC0 AND zlib AND Unicode-DFS-2015 AND HPND-Markus-Kuhn AND Ruby-pty
+  categories:
+    - Unspecified
+  vulnerable: true
 - repo: rosa_2019_1
   subrepo: main/release
   srcname: ruby
@@ -4808,6 +4924,17 @@
   summary: A dynamic, open source programming language with a focus on simplicity and productivity.
   categories:
     - Interpreter
+- repo: side
+  srcname: development/toolchain/ruby
+  visiblename: ruby
+  version: 3.4.12
+  origversion: null
+  status: outdated
+  summary: An object-oriented scripting language.
+  maintainers:
+    - uglyside@yandex.ru
+  licenses:
+    - Ruby/BSD-2-Clase/MIT
 - repo: slackware_15_0
   subrepo: patches
   binname: ruby
@@ -4907,6 +5034,29 @@
     - Ruby AND BSD-2-Clause AND MIT
   categories:
     - windows
+- repo: starkos
+  subrepo: main
+  srcname: ruby
+  visiblename: ruby
+  version: 4.0.9
+  origversion: 4.0.9-1
+  status: newest
+  summary: Ruby development environment
+  maintainers:
+    - starkos@disroot.org
+- repo: t2
+  srcname: ruby
+  visiblename: ruby
+  version: 4.0.9
+  origversion: null
+  status: newest
+  summary: The Ruby programming language
+  maintainers:
+    - rene@exactco.de
+  licenses:
+    - GPL
+  categories:
+    - extra/development
 - repo: ubi_8
   subrepo: appstream
   srcname: ruby
@@ -5058,73 +5208,6 @@
     - 2-clause BSD License
     - GNU General Public License, version 2.0
     - Ruby License
-- repo: openindiana
-  subrepo: hipster
-  srcname: ruby
-  binname: runtime/ruby-40
-  visiblename: ruby
-  version: 4.0.4
-  origversion: null
-  status: legacy
-  summary: Ruby, RubyGems, and Rake
-  categories:
-    - Development/Ruby
-  vulnerable: true
-- repo: openindiana
-  subrepo: hipster
-  srcname: ruby
-  binname: runtime/ruby-40
-  visiblename: ruby
-  version: 4.0.5
-  origversion: null
-  status: legacy
-  summary: Ruby, RubyGems, and Rake
-  categories:
-    - Development/Ruby
-  vulnerable: true
-- repo: openindiana
-  subrepo: hipster
-  srcname: ruby
-  binname: runtime/ruby-40
-  visiblename: ruby
-  version: 4.0.6
-  origversion: null
-  status: legacy
-  summary: Ruby, RubyGems, and Rake
-  categories:
-    - Development/Ruby
-  vulnerable: true
-- repo: openindiana
-  subrepo: hipster
-  srcname: ruby
-  binname: runtime/ruby-40
-  visiblename: ruby
-  version: 4.0.7
-  origversion: null
-  status: legacy
-  summary: Ruby, RubyGems, and Rake
-  categories:
-    - Development/Ruby
-  vulnerable: true
-- repo: aix_osp
-  srcname: ruby
-  visiblename: ruby
-  version: 2.0.0.648
-  origversion: 2.0.0.648-1
-  status: outdated
-  vulnerable: true
-- repo: amazon_2
-  srcname: ruby
-  visiblename: ruby
-  version: 2.0.0.648
-  origversion: 2.0.0.648-36.amzn2.0.2
-  status: outdated
-  summary: An interpreter of object-oriented scripting language
-  licenses:
-    - (Ruby or BSD) and Public Domain
-  categories:
-    - Development/Languages
-  vulnerable: true
 - repo: amazon_1
   subrepo: main
   srcname: ruby22
@@ -5140,6 +5223,31 @@
   vulnerable: true
 - repo: amazon_1
   subrepo: main
+  srcname: ruby18
+  visiblename: ruby18
+  version: 1.8.7.374
+  origversion: 1.8.7.374-2.42.4.amzn1
+  status: legacy
+  summary: An interpreter of object-oriented scripting language
+  licenses:
+    - Ruby or GPLv2
+  categories:
+    - Development/Languages
+  vulnerable: true
+- repo: amazon_2
+  srcname: ruby
+  visiblename: ruby
+  version: 2.0.0.648
+  origversion: 2.0.0.648-36.amzn2.0.9
+  status: outdated
+  summary: An interpreter of object-oriented scripting language
+  licenses:
+    - (Ruby or BSD) and Public Domain
+  categories:
+    - Development/Languages
+  vulnerable: true
+- repo: amazon_1
+  subrepo: main
   srcname: ruby21
   visiblename: ruby21
   version: 2.1.8
@@ -5148,6 +5256,31 @@
   summary: An interpreter of object-oriented scripting language
   licenses:
     - (Ruby or BSD) and Public Domain
+  categories:
+    - Development/Languages
+  vulnerable: true
+- repo: aixtoolbox
+  srcname: ruby
+  visiblename: ruby
+  version: 4.0.6
+  origversion: 4.0.6-2
+  status: outdated
+  summary: An interpreter of object-oriented scripting language
+  licenses:
+    - Ruby
+  categories:
+    - Development/Languages
+  vulnerable: true
+- repo: amazon_1
+  subrepo: main
+  srcname: ruby24
+  visiblename: ruby24
+  version: 2.4.4
+  origversion: 2.4.4-1.30.6.amzn1
+  status: legacy
+  summary: An interpreter of object-oriented scripting language
+  licenses:
+    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
   categories:
     - Development/Languages
   vulnerable: true
@@ -5179,6 +5312,58 @@
   vulnerable: true
 - repo: amazon_1
   subrepo: updates
+  srcname: ruby19
+  visiblename: ruby19
+  version: 1.9.3.551
+  origversion: 1.9.3.551-33.71.amzn1
+  status: legacy
+  summary: An interpreter of object-oriented scripting language
+  licenses:
+    - (Ruby or BSD) and Public Domain
+  categories:
+    - Development/Languages
+  vulnerable: true
+- repo: amazon_1
+  subrepo: updates
+  srcname: ruby20
+  visiblename: ruby20
+  version: 2.0.0.648
+  origversion: 2.0.0.648-1.32.amzn1
+  status: legacy
+  summary: An interpreter of object-oriented scripting language
+  licenses:
+    - (Ruby or BSD) and Public Domain
+  categories:
+    - Development/Languages
+  vulnerable: true
+- repo: amazon_1
+  subrepo: updates
+  srcname: ruby20
+  visiblename: ruby20
+  version: 2.0.0.648
+  origversion: 2.0.0.648-1.33.amzn1
+  status: legacy
+  summary: An interpreter of object-oriented scripting language
+  licenses:
+    - (Ruby or BSD) and Public Domain
+  categories:
+    - Development/Languages
+  vulnerable: true
+- repo: amazon_1
+  subrepo: updates
+  srcname: ruby20
+  visiblename: ruby20
+  version: 2.0.0.648
+  origversion: 2.0.0.648-2.39.amzn1
+  status: legacy
+  summary: An interpreter of object-oriented scripting language
+  licenses:
+    - (Ruby or BSD) and Public Domain
+  categories:
+    - Development/Languages
+  vulnerable: true
+- repo: amazon_1
+  subrepo: updates
   srcname: ruby20
   visiblename: ruby20
   version: 2.0.0.648
@@ -5190,69 +5375,6 @@
   categories:
     - Development/Languages
   vulnerable: true
-- repo: aixtoolbox
-  srcname: ruby
-  visiblename: ruby
-  version: 4.0.6
-  origversion: 4.0.6-2
-  status: outdated
-  summary: An interpreter of object-oriented scripting language
-  licenses:
-    - Ruby
-  categories:
-    - Development/Languages
-  vulnerable: true
-- repo: amazon_1
-  subrepo: updates
-  srcname: ruby24
-  visiblename: ruby24
-  version: 2.4.10
-  origversion: 2.4.10-2.15.amzn1
-  status: outdated
-  summary: An interpreter of object-oriented scripting language
-  licenses:
-    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
-  categories:
-    - Development/Languages
-  vulnerable: true
-- repo: amazon_2
-  srcname: ruby
-  visiblename: ruby
-  version: 2.0.0.648
-  origversion: 2.0.0.648-33.amzn2.0.1
-  status: outdated
-  summary: An interpreter of object-oriented scripting language
-  licenses:
-    - (Ruby or BSD) and Public Domain
-  categories:
-    - Development/Languages
-  vulnerable: true
-- repo: amazon_1
-  subrepo: updates
-  srcname: ruby24
-  visiblename: ruby24
-  version: 2.4.5
-  origversion: 2.4.5-1.30.11.amzn1
-  status: legacy
-  summary: An interpreter of object-oriented scripting language
-  licenses:
-    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
-  categories:
-    - Development/Languages
-  vulnerable: true
-- repo: amazon_1
-  subrepo: updates
-  srcname: ruby24
-  visiblename: ruby24
-  version: 2.4.5
-  origversion: 2.4.5-1.30.7.amzn1
-  status: legacy
-  summary: An interpreter of object-oriented scripting language
-  licenses:
-    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
-  categories:
-    - Development/Languages
-  vulnerable: true
 - repo: amazon_1
   subrepo: updates
   srcname: ruby20
@@ -5260,18 +5382,6 @@
   version: 2.0.0.648
   origversion: 2.0.0.648-2.41.amzn1
   status: legacy
-  summary: An interpreter of object-oriented scripting language
-  licenses:
-    - (Ruby or BSD) and Public Domain
-  categories:
-    - Development/Languages
-  vulnerable: true
-- repo: amazon_2
-  srcname: ruby
-  visiblename: ruby
-  version: 2.0.0.648
-  origversion: 2.0.0.648-29.amzn2
-  status: outdated
   summary: An interpreter of object-oriented scripting language
   licenses:
     - (Ruby or BSD) and Public Domain
@@ -5304,11 +5414,183 @@
   categories:
     - Development/Languages
   vulnerable: true
+- repo: amazon_1
+  subrepo: updates
+  srcname: ruby21
+  visiblename: ruby21
+  version: 2.1.9
+  origversion: 2.1.9-1.22.amzn1
+  status: legacy
+  summary: An interpreter of object-oriented scripting language
+  licenses:
+    - (Ruby or BSD) and Public Domain
+  categories:
+    - Development/Languages
+  vulnerable: true
+- repo: amazon_1
+  subrepo: updates
+  srcname: ruby21
+  visiblename: ruby21
+  version: 2.1.9
+  origversion: 2.1.9-1.23.amzn1
+  status: legacy
+  summary: An interpreter of object-oriented scripting language
+  licenses:
+    - (Ruby or BSD) and Public Domain
+  categories:
+    - Development/Languages
+  vulnerable: true
+- repo: amazon_1
+  subrepo: updates
+  srcname: ruby23
+  visiblename: ruby23
+  version: 2.3.8
+  origversion: 2.3.8-1.20.amzn1
+  status: legacy
+  summary: An interpreter of object-oriented scripting language
+  licenses:
+    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
+  categories:
+    - Development/Languages
+  vulnerable: true
+- repo: amazon_1
+  subrepo: updates
+  srcname: ruby24
+  visiblename: ruby24
+  version: 2.4.10
+  origversion: 2.4.10-2.12.amzn1
+  status: outdated
+  summary: An interpreter of object-oriented scripting language
+  licenses:
+    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
+  categories:
+    - Development/Languages
+  vulnerable: true
+- repo: amazon_1
+  subrepo: updates
+  srcname: ruby24
+  visiblename: ruby24
+  version: 2.4.10
+  origversion: 2.4.10-2.13.amzn1
+  status: outdated
+  summary: An interpreter of object-oriented scripting language
+  licenses:
+    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
+  categories:
+    - Development/Languages
+  vulnerable: true
+- repo: amazon_1
+  subrepo: updates
+  srcname: ruby24
+  visiblename: ruby24
+  version: 2.4.10
+  origversion: 2.4.10-2.14.amzn1
+  status: outdated
+  summary: An interpreter of object-oriented scripting language
+  licenses:
+    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
+  categories:
+    - Development/Languages
+  vulnerable: true
 - repo: amazon_2
   srcname: ruby
   visiblename: ruby
   version: 2.0.0.648
-  origversion: 2.0.0.648-34.amzn2.0.1
+  origversion: 2.0.0.648-36.amzn2.0.2
+  status: outdated
+  summary: An interpreter of object-oriented scripting language
+  licenses:
+    - (Ruby or BSD) and Public Domain
+  categories:
+    - Development/Languages
+  vulnerable: true
+- repo: amazon_2
+  srcname: ruby
+  visiblename: ruby
+  version: 2.0.0.648
+  origversion: 2.0.0.648-36.amzn2.0.20
+  status: outdated
+  summary: An interpreter of object-oriented scripting language
+  licenses:
+    - (Ruby or BSD) and Public Domain
+  categories:
+    - Development/Languages
+  vulnerable: true
+- repo: amazon_1
+  subrepo: updates
+  srcname: ruby24
+  visiblename: ruby24
+  version: 2.4.10
+  origversion: 2.4.10-2.15.amzn1
+  status: outdated
+  summary: An interpreter of object-oriented scripting language
+  licenses:
+    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
+  categories:
+    - Development/Languages
+  vulnerable: true
+- repo: amazon_1
+  subrepo: updates
+  srcname: ruby24
+  visiblename: ruby24
+  version: 2.4.5
+  origversion: 2.4.5-1.30.11.amzn1
+  status: legacy
+  summary: An interpreter of object-oriented scripting language
+  licenses:
+    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
+  categories:
+    - Development/Languages
+  vulnerable: true
+- repo: amazon_1
+  subrepo: updates
+  srcname: ruby24
+  visiblename: ruby24
+  version: 2.4.5
+  origversion: 2.4.5-1.30.7.amzn1
+  status: legacy
+  summary: An interpreter of object-oriented scripting language
+  licenses:
+    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
+  categories:
+    - Development/Languages
+  vulnerable: true
+- repo: aix_osp
+  srcname: ruby
+  visiblename: ruby
+  version: 2.0.0.648
+  origversion: 2.0.0.648-1
+  status: outdated
+  vulnerable: true
+- repo: amazon_2
+  srcname: ruby
+  visiblename: ruby
+  version: 2.0.0.648
+  origversion: 2.0.0.648-36.amzn2.0.1
+  status: outdated
+  summary: An interpreter of object-oriented scripting language
+  licenses:
+    - (Ruby or BSD) and Public Domain
+  categories:
+    - Development/Languages
+  vulnerable: true
+- repo: amazon_2
+  srcname: ruby
+  visiblename: ruby
+  version: 2.0.0.648
+  origversion: 2.0.0.648-29.amzn2
+  status: outdated
+  summary: An interpreter of object-oriented scripting language
+  licenses:
+    - (Ruby or BSD) and Public Domain
+  categories:
+    - Development/Languages
+  vulnerable: true
+- repo: amazon_2
+  srcname: ruby
+  visiblename: ruby
+  version: 2.0.0.648
+  origversion: 2.0.0.648-33.amzn2.0.1
   status: outdated
   summary: An interpreter of object-oriented scripting language
   licenses:
@@ -5332,7 +5614,7 @@
   srcname: ruby
   visiblename: ruby
   version: 2.0.0.648
-  origversion: 2.0.0.648-35.amzn2.0.1
+  origversion: 2.0.0.648-34.amzn2.0.1
   status: outdated
   summary: An interpreter of object-oriented scripting language
   licenses:
@@ -5344,21 +5626,8 @@
   srcname: ruby
   visiblename: ruby
   version: 2.0.0.648
-  origversion: 2.0.0.648-36.amzn2.0.1
+  origversion: 2.0.0.648-35.amzn2.0.1
   status: outdated
-  summary: An interpreter of object-oriented scripting language
-  licenses:
-    - (Ruby or BSD) and Public Domain
-  categories:
-    - Development/Languages
-  vulnerable: true
-- repo: amazon_1
-  subrepo: updates
-  srcname: ruby21
-  visiblename: ruby21
-  version: 2.1.9
-  origversion: 2.1.9-1.22.amzn1
-  status: legacy
   summary: An interpreter of object-oriented scripting language
   licenses:
     - (Ruby or BSD) and Public Domain
@@ -5405,7 +5674,7 @@
   srcname: ruby
   visiblename: ruby
   version: 2.0.0.648
-  origversion: 2.0.0.648-36.amzn2.0.15
+  origversion: 2.0.0.648-36.amzn2.0.13
   status: outdated
   summary: An interpreter of object-oriented scripting language
   licenses:
@@ -5429,9 +5698,22 @@
   srcname: ruby
   visiblename: ruby
   version: 2.0.0.648
-  origversion: 2.0.0.648-36.amzn2.0.13
+  origversion: 2.0.0.648-36.amzn2.0.15
   status: outdated
   summary: An interpreter of object-oriented scripting language
+  licenses:
+    - (Ruby or BSD) and Public Domain
+  categories:
+    - Development/Languages
+  vulnerable: true
+- repo: amazon_1
+  subrepo: main
+  srcname: ruby
+  visiblename: ruby
+  version: "2.0"
+  origversion: 1:2.0-0.3.amzn1
+  status: legacy
+  summary: A dynamic, object-oriented scripting language
   licenses:
     - (Ruby or BSD) and Public Domain
   categories:
@@ -5473,124 +5755,526 @@
   categories:
     - Development/Languages
   vulnerable: true
-- repo: amazon_2
+- repo: rocky_9
+  subrepo: AppStream
   srcname: ruby
+  binnames:
+    - ruby
+    - ruby-devel
+    - ruby-libs
+    - rubygems
+    - rubygems-devel
+    - ruby-default-gems
+    - rubygem-irb
+    - rubygem-rdoc
+    - ruby-doc
+    - rubygem-bigdecimal
+    - rubygem-io-console
+    - rubygem-json
+    - rubygem-psych
+    - rubygem-bundler
+    - ruby-bundled-gems
+    - rubygem-minitest
+    - rubygem-power_assert
+    - rubygem-rake
+    - rubygem-rbs
+    - rubygem-test-unit
+    - rubygem-racc
+    - rubygem-rexml
+    - rubygem-rss
+    - rubygem-typeprof
+    - ruby-debuginfo
+    - ruby-debugsource
   visiblename: ruby
-  version: 2.0.0.648
-  origversion: 2.0.0.648-36.amzn2.0.20
+  version: 4.0.6
+  origversion: 4.0.6-34.module+el9.8.0+40271+b5850c84
   status: outdated
   summary: An interpreter of object-oriented scripting language
+  maintainers:
+    - releng@rockylinux.org
   licenses:
-    - (Ruby or BSD) and Public Domain
+    - (Ruby OR BSD-2-Clause) AND (Ruby OR BSD-2-Clause OR GPL-1.0-or-later) AND BSD-3-Clause AND (GPL-3.0-or-later WITH Bison-exception-2.2) AND ISC AND LicenseRef-Fedora-Public-Domain AND MIT AND CC0-1.0 AND zlib AND Unicode-DFS-2015 AND HPND-Markus-Kuhn AND Ruby-pty
   categories:
-    - Development/Languages
+    - Unspecified
   vulnerable: true
-- repo: amazon_2
+- repo: rocky_9
+  subrepo: AppStream
   srcname: ruby
+  binnames:
+    - ruby
+    - ruby-devel
+    - ruby-libs
+    - rubygems
+    - rubygems-devel
+    - ruby-default-gems
+    - rubygem-irb
+    - rubygem-rdoc
+    - ruby-doc
+    - rubygem-bigdecimal
+    - rubygem-io-console
+    - rubygem-json
+    - rubygem-psych
+    - rubygem-bundler
+    - ruby-bundled-gems
+    - rubygem-minitest
+    - rubygem-power_assert
+    - rubygem-rake
+    - rubygem-rbs
+    - rubygem-test-unit
+    - rubygem-racc
+    - rubygem-rexml
+    - rubygem-rss
+    - rubygem-typeprof
+    - ruby-debuginfo
+    - ruby-debugsource
   visiblename: ruby
-  version: 2.0.0.648
-  origversion: 2.0.0.648-36.amzn2.0.3
+  version: 4.0.6
+  origversion: 4.0.6-35.module+el9.8.0+40337+8ded9c5e
   status: outdated
   summary: An interpreter of object-oriented scripting language
+  maintainers:
+    - releng@rockylinux.org
   licenses:
-    - (Ruby or BSD) and Public Domain
+    - (Ruby OR BSD-2-Clause) AND (Ruby OR BSD-2-Clause OR GPL-1.0-or-later) AND BSD-3-Clause AND (GPL-3.0-or-later WITH Bison-exception-2.2) AND ISC AND LicenseRef-Fedora-Public-Domain AND MIT AND CC0-1.0 AND zlib AND Unicode-DFS-2015 AND HPND-Markus-Kuhn AND Ruby-pty
   categories:
-    - Development/Languages
+    - Unspecified
   vulnerable: true
-- repo: amazon_2
+- repo: slackware_15_0
+  subrepo: slackware
+  binname: ruby
+  visiblename: ruby
+  version: 3.0.3
+  origversion: null
+  status: legacy
+  maintainers:
+    - volkerdi@slackware.com
+  vulnerable: true
+- repo: slackware64_15_0
+  subrepo: slackware64
+  binname: ruby
+  visiblename: ruby
+  version: 3.0.3
+  origversion: null
+  status: legacy
+  maintainers:
+    - volkerdi@slackware.com
+  vulnerable: true
+- repo: slackwarearm_15_0
+  subrepo: slackware
+  binname: ruby
+  visiblename: ruby
+  version: 3.0.3
+  origversion: null
+  status: legacy
+  maintainers:
+    - volkerdi@slackware.com
+  vulnerable: true
+- repo: tur
+  srcname: ruby-2
+  binname: ruby-2
+  visiblename: ruby-2
+  version: 2.7.6
+  origversion: null
+  status: outdated
+  summary: Dynamic programming language with a focus on simplicity and productivity (Version 2)
+  maintainers:
+    - termux-user-repository@github
+  vulnerable: true
+- repo: ubi_8
+  subrepo: appstream
   srcname: ruby
   visiblename: ruby
-  version: 2.0.0.648
-  origversion: 2.0.0.648-36.amzn2.0.4
-  status: outdated
-  summary: An interpreter of object-oriented scripting language
-  licenses:
-    - (Ruby or BSD) and Public Domain
-  categories:
-    - Development/Languages
-  vulnerable: true
-- repo: amazon_2
-  srcname: ruby
-  visiblename: ruby
-  version: 2.0.0.648
-  origversion: 2.0.0.648-36.amzn2.0.5
-  status: outdated
-  summary: An interpreter of object-oriented scripting language
-  licenses:
-    - (Ruby or BSD) and Public Domain
-  categories:
-    - Development/Languages
-  vulnerable: true
-- repo: amazon_2
-  srcname: ruby
-  visiblename: ruby
-  version: 2.0.0.648
-  origversion: 2.0.0.648-36.amzn2.0.6
-  status: outdated
-  summary: An interpreter of object-oriented scripting language
-  licenses:
-    - (Ruby or BSD) and Public Domain
-  categories:
-    - Development/Languages
-  vulnerable: true
-- repo: amazon_2
-  srcname: ruby
-  visiblename: ruby
-  version: 2.0.0.648
-  origversion: 2.0.0.648-36.amzn2.0.7
-  status: outdated
-  summary: An interpreter of object-oriented scripting language
-  licenses:
-    - (Ruby or BSD) and Public Domain
-  categories:
-    - Development/Languages
-  vulnerable: true
-- repo: amazon_2
-  srcname: ruby
-  visiblename: ruby
-  version: 2.0.0.648
-  origversion: 2.0.0.648-36.amzn2.0.8
-  status: outdated
-  summary: An interpreter of object-oriented scripting language
-  licenses:
-    - (Ruby or BSD) and Public Domain
-  categories:
-    - Development/Languages
-  vulnerable: true
-- repo: amazon_2
-  srcname: ruby
-  visiblename: ruby
-  version: 2.0.0.648
-  origversion: 2.0.0.648-36.amzn2.0.9
-  status: outdated
-  summary: An interpreter of object-oriented scripting language
-  licenses:
-    - (Ruby or BSD) and Public Domain
-  categories:
-    - Development/Languages
-  vulnerable: true
-- repo: amazon_1
-  subrepo: updates
-  srcname: ruby21
-  visiblename: ruby21
-  version: 2.1.9
-  origversion: 2.1.9-1.23.amzn1
+  version: 2.6.10
+  origversion: 2.6.10-109.module+el8.6.0+15475+c55337b4
   status: legacy
   summary: An interpreter of object-oriented scripting language
   licenses:
-    - (Ruby or BSD) and Public Domain
+    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: ubi_8
+  subrepo: appstream
+  srcname: ruby
+  visiblename: ruby
+  version: 2.5.9
+  origversion: 2.5.9-116.module+el8.10.0+24853+52b5af56
+  status: legacy
+  summary: An interpreter of object-oriented scripting language
+  licenses:
+    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
   categories:
     - Development/Languages
   vulnerable: true
-- repo: parabola
-  subrepo: libre
+- repo: ubi_8
+  subrepo: appstream
   srcname: ruby
-  binname: ruby-default-gems
-  visiblename: ruby-default-gems
-  version: 3.4.8
-  origversion: 3.4.8-2.parabola1
+  visiblename: ruby
+  version: 3.3.12
+  origversion: 3.3.12-9.module+el8.10.0+24850+a62b5b25
   status: outdated
-  summary: Depends on gems that are a part of Ruby and can always be required directly
+  summary: An interpreter of object-oriented scripting language
+  licenses:
+    - (Ruby OR BSD-2-Clause) AND (Ruby OR BSD-2-Clause OR GPL-1.0-or-later) AND BSD-3-Clause AND (GPL-3.0-or-later WITH Bison-exception-2.2) AND ISC AND LicenseRef-Fedora-Public-Domain AND MIT AND CC0 AND zlib AND Unicode-DFS-2015 AND HPND-Markus-Kuhn AND Ruby-pty
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: ubuntu_14_04
+  subrepo: trusty-updates/main
+  srcname: ruby1.9.1
+  binnames:
+    - ruby1.9.1
+    - libruby1.9.1
+    - libruby1.9.1-dbg
+    - ruby1.9.1-dev
+    - libtcltk-ruby1.9.1
+    - ruby1.9.1-examples
+    - ri1.9.1
+    - ruby1.9.1-full
+    - ruby1.9.3
+  visiblename: ruby1.9.1
+  version: 1.9.3.484
+  origversion: 1.9.3.484-2ubuntu1.14
+  status: legacy
+  maintainers:
+    - ubuntu-devel-discuss@lists.ubuntu.com
+    - akira@debian.org
+    - daigo@debian.org
+    - lucas@debian.org
+  categories:
+    - ruby
+  vulnerable: true
+- repo: ubuntu_14_04
+  subrepo: trusty-updates/main
+  srcname: ruby2.0
+  binnames:
+    - ruby2.0
+    - libruby2.0
+    - ruby2.0-dev
+    - ruby2.0-doc
+    - ruby2.0-tcltk
+  visiblename: ruby2.0
+  version: 2.0.0.484
+  origversion: 2.0.0.484-1ubuntu2.13
+  status: outdated
+  maintainers:
+    - ubuntu-devel-discuss@lists.ubuntu.com
+    - zeha@debian.org
+  categories:
+    - misc
+  vulnerable: true
+- repo: ubuntu_14_04
+  subrepo: trusty/main
+  srcname: ruby1.9.1
+  binnames:
+    - ruby1.9.1
+    - libruby1.9.1
+    - libruby1.9.1-dbg
+    - ruby1.9.1-dev
+    - libtcltk-ruby1.9.1
+    - ruby1.9.1-examples
+    - ri1.9.1
+    - ruby1.9.1-full
+    - ruby1.9.3
+  visiblename: ruby1.9.1
+  version: 1.9.3.484
+  origversion: 1.9.3.484-2ubuntu1
+  status: legacy
+  maintainers:
+    - ubuntu-devel-discuss@lists.ubuntu.com
+    - akira@debian.org
+    - daigo@debian.org
+    - lucas@debian.org
+  categories:
+    - ruby
+  vulnerable: true
+- repo: ubuntu_14_04
+  subrepo: trusty/main
+  srcname: ruby2.0
+  binnames:
+    - ruby2.0
+    - libruby2.0
+    - ruby2.0-dev
+    - ruby2.0-doc
+    - ruby2.0-tcltk
+  visiblename: ruby2.0
+  version: 2.0.0.484
+  origversion: 2.0.0.484-1ubuntu2
+  status: outdated
+  maintainers:
+    - ubuntu-devel-discuss@lists.ubuntu.com
+    - zeha@debian.org
+  categories:
+    - misc
+  vulnerable: true
+- repo: ubuntu_16_04
+  subrepo: xenial/main
+  srcname: ruby2.3
+  binnames:
+    - ruby2.3
+    - libruby2.3
+    - libruby2.3-dbg
+    - ruby2.3-dev
+    - ruby2.3-doc
+    - ruby2.3-tcltk
+  visiblename: ruby2.3
+  version: 2.3.0
+  origversion: 2.3.0-5ubuntu1
+  status: legacy
+  maintainers:
+    - terceiro@debian.org
+    - zeha@debian.org
+  categories:
+    - misc
+  vulnerable: true
+- repo: ubuntu_16_04
+  subrepo: xenial-updates/main
+  srcname: ruby2.3
+  binnames:
+    - ruby2.3
+    - libruby2.3
+    - libruby2.3-dbg
+    - ruby2.3-dev
+    - ruby2.3-doc
+    - ruby2.3-tcltk
+  visiblename: ruby2.3
+  version: 2.3.1
+  origversion: 2.3.1-2~ubuntu16.04.16
+  status: outdated
+  maintainers:
+    - ubuntu-devel-discuss@lists.ubuntu.com
+    - zeha@debian.org
+  categories:
+    - misc
+  vulnerable: true
+- repo: ubuntu_18_04
+  subrepo: bionic/main
+  srcname: ruby2.5
+  binnames:
+    - ruby2.5
+    - libruby2.5
+    - ruby2.5-dev
+    - ruby2.5-doc
+  visiblename: ruby2.5
+  version: 2.5.1
+  origversion: 2.5.1-1ubuntu1
+  status: outdated
+  maintainers:
+    - pkg-ruby-extras-maintainers@lists.alioth.debian.org
+    - terceiro@debian.org
+    - zeha@debian.org
+  categories:
+    - misc
+  vulnerable: true
+- repo: ubuntu_18_04
+  subrepo: bionic-updates/main
+  srcname: ruby2.5
+  binnames:
+    - ruby2.5
+    - libruby2.5
+    - ruby2.5-dev
+    - ruby2.5-doc
+  visiblename: ruby2.5
+  version: 2.5.1
+  origversion: 2.5.1-1ubuntu1.16
+  status: outdated
+  maintainers:
+    - ubuntu-devel-discuss@lists.ubuntu.com
+    - terceiro@debian.org
+    - zeha@debian.org
+  categories:
+    - misc
+  vulnerable: true
+- repo: ubuntu_20_04
+  subrepo: focal-updates/main
+  srcname: ruby2.7
+  binnames:
+    - ruby2.7
+    - libruby2.7
+    - ruby2.7-dev
+    - ruby2.7-doc
+  visiblename: ruby2.7
+  version: 2.7.0
+  origversion: 2.7.0-5ubuntu1.18
+  status: outdated
+  maintainers:
+    - ubuntu-devel-discuss@lists.ubuntu.com
+    - kanashiro@debian.org
+    - terceiro@debian.org
+    - zeha@debian.org
+  categories:
+    - misc
+  vulnerable: true
+- repo: ubuntu_20_04
+  subrepo: focal/main
+  srcname: ruby2.7
+  binnames:
+    - ruby2.7
+    - libruby2.7
+    - ruby2.7-dev
+    - ruby2.7-doc
+  visiblename: ruby2.7
+  version: 2.7.0
+  origversion: 2.7.0-5ubuntu1
+  status: outdated
+  maintainers:
+    - ubuntu-devel-discuss@lists.ubuntu.com
+    - kanashiro@debian.org
+    - terceiro@debian.org
+    - zeha@debian.org
+  categories:
+    - misc
+  vulnerable: true
+- repo: ubuntu_25_04
+  subrepo: plucky-updates/main
+  srcname: ruby3.3
+  binnames:
+    - ruby3.3
+    - libruby3.3
+    - ruby3.3-dev
+    - ruby3.3-doc
+  visiblename: ruby3.3
+  version: 3.3.7
+  origversion: 3.3.7-1ubuntu2.1
+  status: outdated
+  maintainers:
+    - ubuntu-devel-discuss@lists.ubuntu.com
+    - kanashiro@debian.org
+    - terceiro@debian.org
+    - utkarsh@debian.org
+  categories:
+    - misc
+  vulnerable: true
+- repo: ubuntu_25_04
+  subrepo: plucky/main
+  srcname: ruby3.3
+  binnames:
+    - ruby3.3
+    - libruby3.3
+    - ruby3.3-dev
+    - ruby3.3-doc
+  visiblename: ruby3.3
+  version: 3.3.7
+  origversion: 3.3.7-1ubuntu2
+  status: outdated
+  maintainers:
+    - ubuntu-devel-discuss@lists.ubuntu.com
+    - kanashiro@debian.org
+    - terceiro@debian.org
+    - utkarsh@debian.org
+  categories:
+    - misc
+  vulnerable: true
+- repo: ubuntu_25_10
+  subrepo: questing-updates/main
+  srcname: ruby3.3
+  binnames:
+    - ruby3.3
+    - libruby3.3
+    - ruby3.3-dev
+    - ruby3.3-doc
+  visiblename: ruby3.3
+  version: 3.3.8
+  origversion: 3.3.8-2ubuntu2.1
+  status: outdated
+  maintainers:
+    - ubuntu-devel-discuss@lists.ubuntu.com
+    - kanashiro@debian.org
+    - terceiro@debian.org
+    - utkarsh@debian.org
+  categories:
+    - misc
+  vulnerable: true
+- repo: ubuntu_25_10
+  subrepo: questing/main
+  srcname: ruby3.3
+  binnames:
+    - ruby3.3
+    - libruby3.3
+    - ruby3.3-dev
+    - ruby3.3-doc
+  visiblename: ruby3.3
+  version: 3.3.8
+  origversion: 3.3.8-2ubuntu2
+  status: outdated
+  maintainers:
+    - ubuntu-devel-discuss@lists.ubuntu.com
+    - kanashiro@debian.org
+    - terceiro@debian.org
+    - utkarsh@debian.org
+  categories:
+    - misc
+  vulnerable: true
+- repo: ubuntu_26_04
+  subrepo: resolute/main
+  srcname: ruby3.3
+  binnames:
+    - ruby3.3
+    - libruby3.3
+    - ruby3.3-dev
+    - ruby3.3-doc
+  visiblename: ruby3.3
+  version: 3.3.8
+  origversion: 3.3.8-2ubuntu3
+  status: outdated
+  maintainers:
+    - ubuntu-devel-discuss@lists.ubuntu.com
+    - kanashiro@debian.org
+    - terceiro@debian.org
+    - utkarsh@debian.org
+  categories:
+    - misc
+  vulnerable: true
+- repo: ubuntu_26_04
+  subrepo: resolute-updates/main
+  srcname: ruby3.3
+  binnames:
+    - ruby3.3
+    - libruby3.3
+    - ruby3.3-dev
+    - ruby3.3-doc
+  visiblename: ruby3.3
+  version: 3.3.8
+  origversion: 3.3.8-2ubuntu3.1
+  status: outdated
+  maintainers:
+    - ubuntu-devel-discuss@lists.ubuntu.com
+    - kanashiro@debian.org
+    - terceiro@debian.org
+    - utkarsh@debian.org
+  categories:
+    - misc
+  vulnerable: true
+- repo: ubuntu_26_10
+  subrepo: stonking/main
+  srcname: ruby3.3
+  binnames:
+    - ruby3.3
+    - libruby3.3
+    - ruby3.3-dev
+    - ruby3.3-doc
+  visiblename: ruby3.3
+  version: 3.3.8
+  origversion: 3.3.8-2.2ubuntu4
+  status: outdated
+  maintainers:
+    - ubuntu-devel-discuss@lists.ubuntu.com
+    - kanashiro@debian.org
+    - terceiro@debian.org
+    - utkarsh@debian.org
+  categories:
+    - misc
+  vulnerable: true
+- repo: aur
+  srcname: ruby4
+  binname: ruby4-docs
+  visiblename: ruby4-docs
+  version: 4.0.7
+  origversion: 4.0.7-1
+  status: outdated
+  summary: Documentation files for Ruby
+  maintainers:
+    - bradla8@aur
   licenses:
     - BSD-2-Clause
   vulnerable: true
@@ -5609,210 +6293,17 @@
   categories:
     - Development/Languages
   vulnerable: true
-- repo: almalinux_8
-  subrepo: AppStream
+- repo: amazon_2
   srcname: ruby
   visiblename: ruby
-  version: 2.5.9
-  origversion: 2.5.9-112.module_el8.10.0+3871+342e2c2f
-  status: legacy
-  summary: An interpreter of object-oriented scripting language
-  maintainers:
-    - packager@almalinux.org
-  licenses:
-    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
-  categories:
-    - Development/Languages
-  vulnerable: true
-- repo: almalinux_8
-  subrepo: AppStream
-  srcname: ruby
-  visiblename: ruby
-  version: 2.5.9
-  origversion: 2.5.9-113.module_el8.10.0+3932+2d440da3
-  status: legacy
-  summary: An interpreter of object-oriented scripting language
-  maintainers:
-    - packager@almalinux.org
-  licenses:
-    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
-  categories:
-    - Development/Languages
-  vulnerable: true
-- repo: pkgsrc_2026_2
-  srcname: lang/ruby34
-  binname: ruby34
-  visiblename: lang/ruby34
-  version: 3.4.9
-  origversion: 3.4.9nb2
-  status: legacy
-  summary: Ruby 3.4.9 release package
-  maintainers:
-    - taca@netbsd.org
-  categories:
-    - lang
-  vulnerable: true
-- repo: pkgsrc_2026_2
-  srcname: lang/ruby40
-  binname: ruby40
-  visiblename: lang/ruby40
-  version: 4.0.5
-  origversion: null
+  version: 2.0.0.648
+  origversion: 2.0.0.648-36.amzn2.0.3
   status: outdated
-  summary: Ruby 4.0.5 release package
-  maintainers:
-    - taca@netbsd.org
-  categories:
-    - lang
-  vulnerable: true
-- repo: almalinux_8
-  subrepo: AppStream
-  srcname: ruby
-  visiblename: ruby
-  version: 2.5.9
-  origversion: 2.5.9-114.module_el8.10.0+3991+5e651d4e
-  status: legacy
   summary: An interpreter of object-oriented scripting language
-  maintainers:
-    - packager@almalinux.org
   licenses:
-    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
+    - (Ruby or BSD) and Public Domain
   categories:
     - Development/Languages
-  vulnerable: true
-- repo: almalinux_8
-  subrepo: AppStream
-  srcname: ruby
-  visiblename: ruby
-  version: 2.5.9
-  origversion: 2.5.9-115.module_el8.10.0+4212+150d00eb
-  status: legacy
-  summary: An interpreter of object-oriented scripting language
-  maintainers:
-    - packager@almalinux.org
-  licenses:
-    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
-  categories:
-    - Development/Languages
-  vulnerable: true
-- repo: parabola
-  subrepo: libre
-  srcname: ruby
-  binname: ruby-bundled-gems
-  visiblename: ruby-bundled-gems
-  version: 3.4.8
-  origversion: 3.4.8-2.parabola1
-  status: outdated
-  summary: Depends on optional gems that are installed by default with Ruby
-  licenses:
-    - BSD-2-Clause
-  vulnerable: true
-- repo: parabola
-  subrepo: libre
-  srcname: ruby
-  binname: ruby-docs
-  visiblename: ruby-docs
-  version: 3.4.8
-  origversion: 3.4.8-2.parabola1
-  status: outdated
-  summary: Documentation files for Ruby
-  licenses:
-    - BSD-2-Clause
-  vulnerable: true
-- repo: almalinux_8
-  subrepo: AppStream
-  srcname: ruby
-  visiblename: ruby
-  version: 2.6.10
-  origversion: 2.6.10-109.module_el8.6.0+2966+77bc279f
-  status: legacy
-  summary: An interpreter of object-oriented scripting language
-  maintainers:
-    - packager@almalinux.org
-  licenses:
-    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: almalinux_8
-  subrepo: AppStream
-  srcname: ruby
-  visiblename: ruby
-  version: 2.5.9
-  origversion: 2.5.9-116.module_el8.10.0+4293+d4d7c902
-  status: legacy
-  summary: An interpreter of object-oriented scripting language
-  maintainers:
-    - packager@almalinux.org
-  licenses:
-    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
-  categories:
-    - Development/Languages
-  vulnerable: true
-- repo: almalinux_8
-  subrepo: AppStream
-  srcname: ruby
-  visiblename: ruby
-  version: 2.5.9
-  origversion: 2.5.9-116.module_el8.10.0+4294+1072b022
-  status: legacy
-  summary: An interpreter of object-oriented scripting language
-  maintainers:
-    - packager@almalinux.org
-  licenses:
-    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
-  categories:
-    - Development/Languages
-  vulnerable: true
-- repo: almalinux_8
-  subrepo: AppStream
-  srcname: ruby
-  visiblename: ruby
-  version: 2.6.10
-  origversion: 2.6.10-109.module_el8.6.0+3166+77bc279f
-  status: legacy
-  summary: An interpreter of object-oriented scripting language
-  maintainers:
-    - packager@almalinux.org
-  licenses:
-    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: almalinux_8
-  subrepo: AppStream
-  srcname: ruby
-  visiblename: ruby
-  version: 3.0.4
-  origversion: 3.0.4-141.module_el8.6.0+3263+41cde0c0
-  status: legacy
-  summary: An interpreter of object-oriented scripting language
-  maintainers:
-    - packager@almalinux.org
-  licenses:
-    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: pkgsrc_2026_3
-  srcname: lang/ruby
-  binname: ruby
-  visiblename: lang/ruby
-  version: 3.4.11
-  origversion: null
-  status: legacy
-  summary: Wrapper package for Ruby programming language
-  maintainers:
-    - taca@netbsd.org
-  categories:
-    - lang
-  vulnerable: true
-- repo: aix_osp
-  srcname: ruby
-  visiblename: ruby
-  version: 2.0.0.353
-  origversion: 2.0.0.353-1
-  status: legacy
   vulnerable: true
 - repo: aix_osp
   srcname: ruby
@@ -6287,6 +6778,141 @@
   subrepo: AppStream
   srcname: ruby
   visiblename: ruby
+  version: 2.5.9
+  origversion: 2.5.9-112.module_el8.10.0+3871+342e2c2f
+  status: legacy
+  summary: An interpreter of object-oriented scripting language
+  maintainers:
+    - packager@almalinux.org
+  licenses:
+    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
+  categories:
+    - Development/Languages
+  vulnerable: true
+- repo: almalinux_8
+  subrepo: AppStream
+  srcname: ruby
+  visiblename: ruby
+  version: 2.5.9
+  origversion: 2.5.9-113.module_el8.10.0+3932+2d440da3
+  status: legacy
+  summary: An interpreter of object-oriented scripting language
+  maintainers:
+    - packager@almalinux.org
+  licenses:
+    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
+  categories:
+    - Development/Languages
+  vulnerable: true
+- repo: almalinux_8
+  subrepo: AppStream
+  srcname: ruby
+  visiblename: ruby
+  version: 2.5.9
+  origversion: 2.5.9-114.module_el8.10.0+3991+5e651d4e
+  status: legacy
+  summary: An interpreter of object-oriented scripting language
+  maintainers:
+    - packager@almalinux.org
+  licenses:
+    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
+  categories:
+    - Development/Languages
+  vulnerable: true
+- repo: almalinux_8
+  subrepo: AppStream
+  srcname: ruby
+  visiblename: ruby
+  version: 2.5.9
+  origversion: 2.5.9-115.module_el8.10.0+4212+150d00eb
+  status: legacy
+  summary: An interpreter of object-oriented scripting language
+  maintainers:
+    - packager@almalinux.org
+  licenses:
+    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
+  categories:
+    - Development/Languages
+  vulnerable: true
+- repo: almalinux_8
+  subrepo: AppStream
+  srcname: ruby
+  visiblename: ruby
+  version: 2.5.9
+  origversion: 2.5.9-116.module_el8.10.0+4293+d4d7c902
+  status: legacy
+  summary: An interpreter of object-oriented scripting language
+  maintainers:
+    - packager@almalinux.org
+  licenses:
+    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
+  categories:
+    - Development/Languages
+  vulnerable: true
+- repo: almalinux_8
+  subrepo: AppStream
+  srcname: ruby
+  visiblename: ruby
+  version: 2.5.9
+  origversion: 2.5.9-116.module_el8.10.0+4294+1072b022
+  status: legacy
+  summary: An interpreter of object-oriented scripting language
+  maintainers:
+    - packager@almalinux.org
+  licenses:
+    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
+  categories:
+    - Development/Languages
+  vulnerable: true
+- repo: almalinux_8
+  subrepo: AppStream
+  srcname: ruby
+  visiblename: ruby
+  version: 2.6.10
+  origversion: 2.6.10-109.module_el8.6.0+2966+77bc279f
+  status: legacy
+  summary: An interpreter of object-oriented scripting language
+  maintainers:
+    - packager@almalinux.org
+  licenses:
+    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: almalinux_8
+  subrepo: AppStream
+  srcname: ruby
+  visiblename: ruby
+  version: 2.6.10
+  origversion: 2.6.10-109.module_el8.6.0+3166+77bc279f
+  status: legacy
+  summary: An interpreter of object-oriented scripting language
+  maintainers:
+    - packager@almalinux.org
+  licenses:
+    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: almalinux_8
+  subrepo: AppStream
+  srcname: ruby
+  visiblename: ruby
+  version: 3.0.4
+  origversion: 3.0.4-141.module_el8.6.0+3263+41cde0c0
+  status: legacy
+  summary: An interpreter of object-oriented scripting language
+  maintainers:
+    - packager@almalinux.org
+  licenses:
+    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: almalinux_8
+  subrepo: AppStream
+  srcname: ruby
+  visiblename: ruby
   version: 3.3.0
   origversion: 3.3.0-1.module_el8.10.0+3799+191214cc
   status: legacy
@@ -6327,6 +6953,18 @@
     - (Ruby OR BSD-2-Clause) AND (Ruby OR BSD-2-Clause OR GPL-1.0-or-later) AND BSD-3-Clause AND (GPL-3.0-or-later WITH Bison-exception-2.2) AND ISC AND LicenseRef-Fedora-Public-Domain AND MIT AND CC0 AND zlib AND Unicode-DFS-2015 AND HPND-Markus-Kuhn AND Ruby-pty
   categories:
     - Unspecified
+  vulnerable: true
+- repo: amazon_2
+  srcname: ruby
+  visiblename: ruby
+  version: 2.0.0.648
+  origversion: 2.0.0.648-36.amzn2.0.4
+  status: outdated
+  summary: An interpreter of object-oriented scripting language
+  licenses:
+    - (Ruby or BSD) and Public Domain
+  categories:
+    - Development/Languages
   vulnerable: true
 - repo: almalinux_8
   subrepo: AppStream
@@ -6417,32 +7055,6 @@
     - (Ruby OR BSD-2-Clause) AND (Ruby OR BSD-2-Clause OR GPL-1.0-or-later) AND BSD-3-Clause AND (GPL-3.0-or-later WITH Bison-exception-2.2) AND ISC AND LicenseRef-Fedora-Public-Domain AND MIT AND CC0 AND zlib AND Unicode-DFS-2015 AND HPND-Markus-Kuhn AND Ruby-pty
   categories:
     - Unspecified
-  vulnerable: true
-- repo: amazon_1
-  subrepo: updates
-  srcname: ruby19
-  visiblename: ruby19
-  version: 1.9.3.551
-  origversion: 1.9.3.551-33.71.amzn1
-  status: legacy
-  summary: An interpreter of object-oriented scripting language
-  licenses:
-    - (Ruby or BSD) and Public Domain
-  categories:
-    - Development/Languages
-  vulnerable: true
-- repo: amazon_1
-  subrepo: updates
-  srcname: ruby20
-  visiblename: ruby20
-  version: 2.0.0.648
-  origversion: 2.0.0.648-1.32.amzn1
-  status: legacy
-  summary: An interpreter of object-oriented scripting language
-  licenses:
-    - (Ruby or BSD) and Public Domain
-  categories:
-    - Development/Languages
   vulnerable: true
 - repo: almalinux_9
   subrepo: AppStream
@@ -6612,6 +7224,20 @@
   categories:
     - Unspecified
   vulnerable: true
+- repo: alpine_3_20
+  subrepo: main
+  srcname: ruby
+  binname: ruby-full
+  visiblename: ruby-full
+  version: 3.3.10
+  origversion: 3.3.10-r0
+  status: outdated
+  summary: Ruby with all bundled gems
+  maintainers:
+    - jakub@jirutka.cz
+  licenses:
+    - Ruby AND BSD-2-Clause AND MIT
+  vulnerable: true
 - repo: almalinux_9
   subrepo: AppStream
   srcname: ruby
@@ -6738,32 +7364,6 @@
   categories:
     - Unspecified
   vulnerable: true
-- repo: amazon_1
-  subrepo: updates
-  srcname: ruby20
-  visiblename: ruby20
-  version: 2.0.0.648
-  origversion: 2.0.0.648-1.33.amzn1
-  status: legacy
-  summary: An interpreter of object-oriented scripting language
-  licenses:
-    - (Ruby or BSD) and Public Domain
-  categories:
-    - Development/Languages
-  vulnerable: true
-- repo: amazon_1
-  subrepo: updates
-  srcname: ruby20
-  visiblename: ruby20
-  version: 2.0.0.648
-  origversion: 2.0.0.648-2.39.amzn1
-  status: legacy
-  summary: An interpreter of object-oriented scripting language
-  licenses:
-    - (Ruby or BSD) and Public Domain
-  categories:
-    - Development/Languages
-  vulnerable: true
 - repo: almalinux_9
   subrepo: AppStream
   srcname: ruby
@@ -6805,6 +7405,18 @@
     - (Ruby OR BSD-2-Clause) AND (Ruby OR BSD-2-Clause OR GPL-1.0-or-later) AND BSD-3-Clause AND (GPL-3.0-or-later WITH Bison-exception-2.2) AND ISC AND LicenseRef-Fedora-Public-Domain AND MIT AND CC0-1.0 AND zlib AND Unicode-DFS-2015 AND HPND-Markus-Kuhn AND Ruby-pty
   categories:
     - Unspecified
+  vulnerable: true
+- repo: amazon_2
+  srcname: ruby
+  visiblename: ruby
+  version: 2.0.0.648
+  origversion: 2.0.0.648-36.amzn2.0.5
+  status: outdated
+  summary: An interpreter of object-oriented scripting language
+  licenses:
+    - (Ruby or BSD) and Public Domain
+  categories:
+    - Development/Languages
   vulnerable: true
 - repo: almalinux_9
   subrepo: AppStream
@@ -6848,16 +7460,39 @@
   categories:
     - Unspecified
   vulnerable: true
-- repo: amazon_1
-  subrepo: updates
-  srcname: ruby24
-  visiblename: ruby24
-  version: 2.4.10
-  origversion: 2.4.10-2.13.amzn1
+- repo: amazon_2
+  srcname: ruby
+  visiblename: ruby
+  version: 2.0.0.648
+  origversion: 2.0.0.648-36.amzn2.0.6
   status: outdated
   summary: An interpreter of object-oriented scripting language
   licenses:
-    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
+    - (Ruby or BSD) and Public Domain
+  categories:
+    - Development/Languages
+  vulnerable: true
+- repo: amazon_2
+  srcname: ruby
+  visiblename: ruby
+  version: 2.0.0.648
+  origversion: 2.0.0.648-36.amzn2.0.7
+  status: outdated
+  summary: An interpreter of object-oriented scripting language
+  licenses:
+    - (Ruby or BSD) and Public Domain
+  categories:
+    - Development/Languages
+  vulnerable: true
+- repo: amazon_2
+  srcname: ruby
+  visiblename: ruby
+  version: 2.0.0.648
+  origversion: 2.0.0.648-36.amzn2.0.8
+  status: outdated
+  summary: An interpreter of object-oriented scripting language
+  licenses:
+    - (Ruby or BSD) and Public Domain
   categories:
     - Development/Languages
   vulnerable: true
@@ -6920,20 +7555,6 @@
 - repo: alpine_3_20
   subrepo: main
   srcname: ruby
-  binname: ruby-full
-  visiblename: ruby-full
-  version: 3.3.10
-  origversion: 3.3.10-r0
-  status: outdated
-  summary: Ruby with all bundled gems
-  maintainers:
-    - jakub@jirutka.cz
-  licenses:
-    - Ruby AND BSD-2-Clause AND MIT
-  vulnerable: true
-- repo: alpine_3_20
-  subrepo: main
-  srcname: ruby
   binname: ruby-libs
   visiblename: ruby-libs
   version: 3.3.10
@@ -6959,30 +7580,18 @@
   licenses:
     - Ruby
   vulnerable: true
-- repo: artix
-  subrepo: world
-  srcname: ruby
-  binname: ruby-docs
-  visiblename: ruby-docs
-  version: 3.4.10
-  origversion: 3.4.10-1
+- repo: aur
+  srcname: ruby4
+  binname: ruby4
+  visiblename: ruby4
+  version: 4.0.7
+  origversion: 4.0.7-1
   status: outdated
-  summary: Documentation files for Ruby
+  summary: An object-oriented language for quick and easy programming
+  maintainers:
+    - bradla8@aur
   licenses:
     - BSD-2-Clause
-  vulnerable: true
-- repo: amazon_1
-  subrepo: updates
-  srcname: ruby24
-  visiblename: ruby24
-  version: 2.4.10
-  origversion: 2.4.10-2.14.amzn1
-  status: outdated
-  summary: An interpreter of object-oriented scripting language
-  licenses:
-    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
-  categories:
-    - Development/Languages
   vulnerable: true
 - repo: alt_p11
   srcname: ruby
@@ -7041,71 +7650,6 @@
   version: 2.3.7
   origversion: 2.3.7-1.19.amzn1
   status: legacy
-  summary: An interpreter of object-oriented scripting language
-  licenses:
-    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
-  categories:
-    - Development/Languages
-  vulnerable: true
-- repo: amazon_1
-  subrepo: main
-  srcname: ruby
-  visiblename: ruby
-  version: "2.0"
-  origversion: 1:2.0-0.3.amzn1
-  status: legacy
-  summary: A dynamic, object-oriented scripting language
-  licenses:
-    - (Ruby or BSD) and Public Domain
-  categories:
-    - Development/Languages
-  vulnerable: true
-- repo: amazon_1
-  subrepo: main
-  srcname: ruby18
-  visiblename: ruby18
-  version: 1.8.7.374
-  origversion: 1.8.7.374-2.42.4.amzn1
-  status: legacy
-  summary: An interpreter of object-oriented scripting language
-  licenses:
-    - Ruby or GPLv2
-  categories:
-    - Development/Languages
-  vulnerable: true
-- repo: amazon_1
-  subrepo: main
-  srcname: ruby24
-  visiblename: ruby24
-  version: 2.4.4
-  origversion: 2.4.4-1.30.6.amzn1
-  status: legacy
-  summary: An interpreter of object-oriented scripting language
-  licenses:
-    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
-  categories:
-    - Development/Languages
-  vulnerable: true
-- repo: amazon_1
-  subrepo: updates
-  srcname: ruby23
-  visiblename: ruby23
-  version: 2.3.8
-  origversion: 2.3.8-1.20.amzn1
-  status: legacy
-  summary: An interpreter of object-oriented scripting language
-  licenses:
-    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
-  categories:
-    - Development/Languages
-  vulnerable: true
-- repo: amazon_1
-  subrepo: updates
-  srcname: ruby24
-  visiblename: ruby24
-  version: 2.4.10
-  origversion: 2.4.10-2.12.amzn1
-  status: outdated
   summary: An interpreter of object-oriented scripting language
   licenses:
     - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
@@ -7227,32 +7771,6 @@
   vulnerable: true
 - repo: aur
   srcname: ruby4
-  binname: ruby4
-  visiblename: ruby4
-  version: 4.0.7
-  origversion: 4.0.7-1
-  status: outdated
-  summary: An object-oriented language for quick and easy programming
-  maintainers:
-    - bradla8@aur
-  licenses:
-    - BSD-2-Clause
-  vulnerable: true
-- repo: aur
-  srcname: ruby4
-  binname: ruby4-docs
-  visiblename: ruby4-docs
-  version: 4.0.7
-  origversion: 4.0.7-1
-  status: outdated
-  summary: Documentation files for Ruby
-  maintainers:
-    - bradla8@aur
-  licenses:
-    - BSD-2-Clause
-  vulnerable: true
-- repo: aur
-  srcname: ruby4
   binname: ruby4-default-gems
   visiblename: ruby4-default-gems
   version: 4.0.7
@@ -7287,54 +7805,6 @@
   summary: Full Ruby StdLib including default gems, bundled gems and tools
   maintainers:
     - bradla8@aur
-  licenses:
-    - BSD-2-Clause
-  vulnerable: true
-- repo: artix
-  subrepo: world
-  srcname: ruby
-  binname: ruby-bundled-gems
-  visiblename: ruby-bundled-gems
-  version: 3.4.10
-  origversion: 3.4.10-1
-  status: outdated
-  summary: Bundled gems which are part of Ruby StdLib
-  licenses:
-    - BSD-2-Clause
-  vulnerable: true
-- repo: artix
-  subrepo: world
-  srcname: ruby
-  binname: ruby-default-gems
-  visiblename: ruby-default-gems
-  version: 3.4.10
-  origversion: 3.4.10-1
-  status: outdated
-  summary: Default gems which are part of Ruby StdLib
-  licenses:
-    - BSD-2-Clause
-  vulnerable: true
-- repo: artix
-  subrepo: world
-  srcname: ruby
-  binname: ruby
-  visiblename: ruby
-  version: 3.4.10
-  origversion: 3.4.10-1
-  status: outdated
-  summary: An object-oriented language for quick and easy programming
-  licenses:
-    - BSD-2-Clause
-  vulnerable: true
-- repo: artix
-  subrepo: world
-  srcname: ruby
-  binname: ruby-stdlib
-  visiblename: ruby-stdlib
-  version: 3.4.10
-  origversion: 3.4.10-1
-  status: outdated
-  summary: Full Ruby StdLib including default gems, bundled gems and tools
   licenses:
     - BSD-2-Clause
   vulnerable: true
@@ -7404,18 +7874,18 @@
   categories:
     - Development/Languages
   vulnerable: true
-- repo: pkgsrc_2026_3
-  srcname: lang/ruby34
-  binname: ruby34
-  visiblename: lang/ruby34
-  version: 3.4.11
-  origversion: null
+- repo: eurolinux_8
+  subrepo: appstream
+  srcname: ruby
+  visiblename: ruby
+  version: 2.7.1
+  origversion: 2.7.1-133.module+el8.3.0+7192+4e3a532a
   status: legacy
-  summary: Ruby 3.4.11 release package
-  maintainers:
-    - taca@netbsd.org
+  summary: An interpreter of object-oriented scripting language
+  licenses:
+    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
   categories:
-    - lang
+    - Unspecified
   vulnerable: true
 - repo: centos_8
   subrepo: AppStream
@@ -7466,6 +7936,14 @@
     - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
   categories:
     - Unspecified
+  vulnerable: true
+- repo: chocolatey
+  binname: ruby1.9
+  visiblename: Ruby 1.9
+  version: 1.9.3.54500
+  origversion: null
+  status: legacy
+  summary: Ruby 1.9 - A dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.
   vulnerable: true
 - repo: centos_8
   subrepo: AppStream
@@ -7692,6 +8170,19 @@
   categories:
     - Unspecified
   vulnerable: true
+- repo: eurolinux_8
+  subrepo: appstream
+  srcname: ruby
+  visiblename: ruby
+  version: 2.7.3
+  origversion: 2.7.3-136.module+el8.4.0+10728+4c884998
+  status: legacy
+  summary: An interpreter of object-oriented scripting language
+  licenses:
+    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
+  categories:
+    - Unspecified
+  vulnerable: true
 - repo: centos_stream_8
   subrepo: AppStream
   srcname: ruby
@@ -7721,6 +8212,18 @@
     - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
   categories:
     - Unspecified
+  vulnerable: true
+- repo: nix_stable_24_11
+  srcname: ruby_3_4
+  visiblename: ruby
+  version: 3.4.3
+  origversion: null
+  status: outdated
+  summary: Object-oriented language for quick and easy programming
+  maintainers:
+    - m.fellinger@gmail.com
+  licenses:
+    - Ruby
   vulnerable: true
 - repo: centos_stream_8
   subrepo: AppStream
@@ -7965,34 +8468,6 @@
   categories:
     - Unspecified
   vulnerable: true
-- repo: chocolatey
-  binname: ruby1.9
-  visiblename: Ruby 1.9
-  version: 1.9.3.54500
-  origversion: null
-  status: legacy
-  summary: Ruby 1.9 - A dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.
-  vulnerable: true
-- repo: debian_11
-  subrepo: bullseye/main
-  srcname: ruby2.7
-  binnames:
-    - ruby2.7
-    - libruby2.7
-    - ruby2.7-dev
-    - ruby2.7-doc
-  visiblename: ruby2.7
-  version: 2.7.4
-  origversion: 2.7.4-1+deb11u1
-  status: outdated
-  maintainers:
-    - pkg-ruby-extras-maintainers@lists.alioth.debian.org
-    - kanashiro@debian.org
-    - terceiro@debian.org
-    - utkarsh@debian.org
-  categories:
-    - misc
-  vulnerable: true
 - repo: centos_stream_9
   subrepo: AppStream
   srcname: ruby
@@ -8034,26 +8509,6 @@
     - (Ruby OR BSD-2-Clause) AND (Ruby OR BSD-2-Clause OR GPL-1.0-or-later) AND BSD-3-Clause AND (GPL-3.0-or-later WITH Bison-exception-2.2) AND ISC AND LicenseRef-Fedora-Public-Domain AND MIT AND CC0-1.0 AND zlib AND Unicode-DFS-2015 AND HPND-Markus-Kuhn AND Ruby-pty
   categories:
     - Unspecified
-  vulnerable: true
-- repo: debian_11
-  subrepo: bullseye-security/main
-  srcname: ruby2.7
-  binnames:
-    - ruby2.7
-    - libruby2.7
-    - ruby2.7-dev
-    - ruby2.7-doc
-  visiblename: ruby2.7
-  version: 2.7.4
-  origversion: 2.7.4-1+deb11u6
-  status: outdated
-  maintainers:
-    - pkg-ruby-extras-maintainers@lists.alioth.debian.org
-    - kanashiro@debian.org
-    - terceiro@debian.org
-    - utkarsh@debian.org
-  categories:
-    - misc
   vulnerable: true
 - repo: centos_stream_10
   subrepo: AppStream
@@ -8288,6 +8743,26 @@
   categories:
     - Unspecified
   vulnerable: true
+- repo: debian_11
+  subrepo: bullseye-security/main
+  srcname: ruby2.7
+  binnames:
+    - ruby2.7
+    - libruby2.7
+    - ruby2.7-dev
+    - ruby2.7-doc
+  visiblename: ruby2.7
+  version: 2.7.4
+  origversion: 2.7.4-1+deb11u6
+  status: outdated
+  maintainers:
+    - pkg-ruby-extras-maintainers@lists.alioth.debian.org
+    - kanashiro@debian.org
+    - terceiro@debian.org
+    - utkarsh@debian.org
+  categories:
+    - misc
+  vulnerable: true
 - repo: centos_stream_10
   subrepo: AppStream
   srcname: ruby4.0
@@ -8310,26 +8785,6 @@
     - (Ruby OR BSD-2-Clause) AND (Ruby OR BSD-2-Clause OR GPL-1.0-or-later) AND BSD-3-Clause AND (GPL-3.0-or-later WITH Bison-exception-2.2) AND ISC AND LicenseRef-Fedora-Public-Domain AND MIT AND CC0-1.0 AND zlib AND Unicode-DFS-2015 AND HPND-Markus-Kuhn AND Ruby-pty AND (Ruby OR BSD-2-Clause OR Python-2.0.1) AND BSD-2-Clause AND (Apache-2.0 OR BSL-1.0) AND GPL-2.0-only AND CC-BY-2.5 AND OFL-1.1-RFN AND BSL-1.0
   categories:
     - Unspecified
-  vulnerable: true
-- repo: devuan_unstable
-  subrepo: unstable/main
-  srcname: ruby3.3
-  binnames:
-    - ruby3.3
-    - libruby3.3
-    - ruby3.3-dev
-    - ruby3.3-doc
-  visiblename: ruby3.3
-  version: 3.3.8
-  origversion: 3.3.8-2.2
-  status: outdated
-  maintainers:
-    - pkg-ruby-extras-maintainers@lists.alioth.debian.org
-    - kanashiro@debian.org
-    - terceiro@debian.org
-    - utkarsh@debian.org
-  categories:
-    - misc
   vulnerable: true
 - repo: centos_stream_10
   subrepo: AppStream
@@ -8549,21 +9004,48 @@
   categories:
     - Interpreters
   vulnerable: true
-- repo: eurolinux_8
-  subrepo: appstream
-  srcname: ruby
-  visiblename: ruby
-  version: 2.7.1
-  origversion: 2.7.1-133.module+el8.3.0+7192+4e3a532a
-  status: legacy
-  summary: An interpreter of object-oriented scripting language
-  licenses:
-    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
+- repo: debian_11
+  subrepo: bullseye/main
+  srcname: ruby2.7
+  binnames:
+    - ruby2.7
+    - libruby2.7
+    - ruby2.7-dev
+    - ruby2.7-doc
+  visiblename: ruby2.7
+  version: 2.7.4
+  origversion: 2.7.4-1+deb11u1
+  status: outdated
+  maintainers:
+    - pkg-ruby-extras-maintainers@lists.alioth.debian.org
+    - kanashiro@debian.org
+    - terceiro@debian.org
+    - utkarsh@debian.org
   categories:
-    - Unspecified
+    - misc
+  vulnerable: true
+- repo: devuan_unstable
+  subrepo: unstable/main
+  srcname: ruby3.3
+  binnames:
+    - ruby3.3
+    - libruby3.3
+    - ruby3.3-dev
+    - ruby3.3-doc
+  visiblename: ruby3.3
+  version: 3.3.8
+  origversion: 3.3.8-2.2
+  status: outdated
+  maintainers:
+    - pkg-ruby-extras-maintainers@lists.alioth.debian.org
+    - kanashiro@debian.org
+    - terceiro@debian.org
+    - utkarsh@debian.org
+  categories:
+    - misc
   vulnerable: true
 - repo: debian_12
-  subrepo: bookworm/main
+  subrepo: bookworm-security/main
   srcname: ruby3.1
   binnames:
     - ruby3.1
@@ -8583,7 +9065,7 @@
     - misc
   vulnerable: true
 - repo: debian_12
-  subrepo: bookworm-security/main
+  subrepo: bookworm/main
   srcname: ruby3.1
   binnames:
     - ruby3.1
@@ -8897,19 +9379,6 @@
   visiblename: ruby
   version: 2.6.9
   origversion: 2.6.9-108.module+el8.5.0+13719+08a8ba32
-  status: legacy
-  summary: An interpreter of object-oriented scripting language
-  licenses:
-    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: eurolinux_8
-  subrepo: appstream
-  srcname: ruby
-  visiblename: ruby
-  version: 2.7.3
-  origversion: 2.7.3-136.module+el8.4.0+10728+4c884998
   status: legacy
   summary: An interpreter of object-oriented scripting language
   licenses:
@@ -9239,6 +9708,21 @@
   categories:
     - Unspecified
   vulnerable: true
+- repo: liguros_develop
+  srcname: dev-lang/ruby
+  visiblename: dev-lang/ruby
+  version: 4.0.7
+  origversion: null
+  status: legacy
+  summary: An object-oriented scripting language
+  maintainers:
+    - dev@liguros.net
+    - ruby@gentoo.org
+  licenses:
+    - '|| ( Ruby-BSD BSD-2 )'
+  categories:
+    - dev-lang
+  vulnerable: true
 - repo: eurolinux_9
   subrepo: appstream
   srcname: ruby
@@ -9358,45 +9842,27 @@
   categories:
     - Unspecified
   vulnerable: true
-- repo: fedora_40
-  subrepo: release
-  srcname: ruby
-  binnames:
-    - ruby
-    - ruby-devel
-    - ruby-libs
-    - rubygems
-    - rubygems-devel
-    - ruby-default-gems
-    - rubygem-irb
-    - rubygem-rdoc
-    - ruby-doc
-    - rubygem-bigdecimal
-    - rubygem-io-console
-    - rubygem-json
-    - rubygem-psych
-    - rubygem-bundler
-    - ruby-bundled-gems
-    - rubygem-minitest
-    - rubygem-power_assert
-    - rubygem-rake
-    - rubygem-rbs
-    - rubygem-test-unit
-    - rubygem-racc
-    - rubygem-rexml
-    - rubygem-rss
-    - rubygem-typeprof
-    - ruby-debuginfo
-    - ruby-debugsource
-  visiblename: ruby
-  version: 3.3.0
-  origversion: 3.3.0-4.fc40
-  status: legacy
-  summary: An interpreter of object-oriented scripting language
-  licenses:
-    - (Ruby OR BSD-2-Clause) AND BSD-3-Clause AND ISC AND Public Domain AND MIT and CC0 AND zlib AND Unicode-DFS-2015
+- repo: freebsd
+  srcname: lang/ruby40
+  binname: ruby40
+  visiblename: lang/ruby40
+  version: 4.0.7
+  origversion: 4.0.7,1
+  status: outdated
+  summary: Object-oriented interpreted scripting language
+  maintainers:
+    - ruby@freebsd.org
   categories:
-    - Unspecified
+    - lang
+  vulnerable: true
+- repo: gnuguix
+  srcname: ruby
+  binname: ruby
+  visiblename: ruby
+  version: 3.3.12
+  origversion: null
+  status: legacy
+  summary: Programming language interpreter
   vulnerable: true
 - repo: fedora_40
   subrepo: updates
@@ -9437,6 +9903,66 @@
     - (Ruby OR BSD-2-Clause) AND (Ruby OR BSD-2-Clause OR GPL-1.0-or-later) AND BSD-3-Clause AND (GPL-3.0-or-later WITH Bison-exception-2.2) AND ISC AND LicenseRef-Fedora-Public-Domain AND MIT AND CC0 AND zlib AND Unicode-DFS-2015 AND HPND-Markus-Kuhn
   categories:
     - Unspecified
+  vulnerable: true
+- repo: fedora_40
+  subrepo: release
+  srcname: ruby
+  binnames:
+    - ruby
+    - ruby-devel
+    - ruby-libs
+    - rubygems
+    - rubygems-devel
+    - ruby-default-gems
+    - rubygem-irb
+    - rubygem-rdoc
+    - ruby-doc
+    - rubygem-bigdecimal
+    - rubygem-io-console
+    - rubygem-json
+    - rubygem-psych
+    - rubygem-bundler
+    - ruby-bundled-gems
+    - rubygem-minitest
+    - rubygem-power_assert
+    - rubygem-rake
+    - rubygem-rbs
+    - rubygem-test-unit
+    - rubygem-racc
+    - rubygem-rexml
+    - rubygem-rss
+    - rubygem-typeprof
+    - ruby-debuginfo
+    - ruby-debugsource
+  visiblename: ruby
+  version: 3.3.0
+  origversion: 3.3.0-4.fc40
+  status: legacy
+  summary: An interpreter of object-oriented scripting language
+  licenses:
+    - (Ruby OR BSD-2-Clause) AND BSD-3-Clause AND ISC AND Public Domain AND MIT and CC0 AND zlib AND Unicode-DFS-2015
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: kali_rolling
+  subrepo: main
+  srcname: ruby3.3
+  binnames:
+    - ruby3.3
+    - libruby3.3
+    - ruby3.3-dev
+    - ruby3.3-doc
+  visiblename: ruby3.3
+  version: 3.3.8
+  origversion: 3.3.8-2.2
+  status: outdated
+  maintainers:
+    - pkg-ruby-extras-maintainers@lists.alioth.debian.org
+    - kanashiro@debian.org
+    - terceiro@debian.org
+    - utkarsh@debian.org
+  categories:
+    - misc
   vulnerable: true
 - repo: fedora_41
   subrepo: updates
@@ -9514,48 +10040,10 @@
   categories:
     - Unspecified
   vulnerable: true
-- repo: fedora_42
-  subrepo: release
-  srcname: ruby
-  binnames:
-    - ruby
-    - ruby-devel
-    - ruby-libs
-    - rubygems
-    - rubygems-devel
-    - ruby-default-gems
-    - rubygem-irb
-    - rubygem-rdoc
-    - ruby-doc
-    - rubygem-bigdecimal
-    - rubygem-io-console
-    - rubygem-json
-    - rubygem-psych
-    - rubygem-bundler
-    - ruby-bundled-gems
-    - rubygem-minitest
-    - rubygem-power_assert
-    - rubygem-rake
-    - rubygem-rbs
-    - rubygem-test-unit
-    - rubygem-racc
-    - rubygem-rexml
-    - rubygem-rss
-    - rubygem-typeprof
-  visiblename: ruby
-  version: 3.4.2
-  origversion: 3.4.2-23.fc42
-  status: legacy
-  summary: An interpreter of object-oriented scripting language
-  licenses:
-    - (Ruby OR BSD-2-Clause) AND (Ruby OR BSD-2-Clause OR GPL-1.0-or-later) AND BSD-3-Clause AND (GPL-3.0-or-later WITH Bison-exception-2.2) AND ISC AND LicenseRef-Fedora-Public-Domain AND MIT AND CC0 AND zlib AND Unicode-DFS-2015 AND HPND-Markus-Kuhn AND Ruby-pty
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: liguros_stable
+- repo: liguros_develop
   srcname: dev-lang/ruby
   visiblename: dev-lang/ruby
-  version: 3.4.4
+  version: 3.3.12
   origversion: null
   status: legacy
   summary: An object-oriented scripting language
@@ -9605,17 +10093,43 @@
   categories:
     - Unspecified
   vulnerable: true
-- repo: nix_stable_25_11
-  srcname: ruby_3_4
+- repo: fedora_42
+  subrepo: release
+  srcname: ruby
+  binnames:
+    - ruby
+    - ruby-devel
+    - ruby-libs
+    - rubygems
+    - rubygems-devel
+    - ruby-default-gems
+    - rubygem-irb
+    - rubygem-rdoc
+    - ruby-doc
+    - rubygem-bigdecimal
+    - rubygem-io-console
+    - rubygem-json
+    - rubygem-psych
+    - rubygem-bundler
+    - ruby-bundled-gems
+    - rubygem-minitest
+    - rubygem-power_assert
+    - rubygem-rake
+    - rubygem-rbs
+    - rubygem-test-unit
+    - rubygem-racc
+    - rubygem-rexml
+    - rubygem-rss
+    - rubygem-typeprof
   visiblename: ruby
-  version: 3.4.8
-  origversion: null
+  version: 3.4.2
+  origversion: 3.4.2-23.fc42
   status: legacy
-  summary: Object-oriented language for quick and easy programming
-  maintainers:
-    - m.fellinger@gmail.com
+  summary: An interpreter of object-oriented scripting language
   licenses:
-    - Ruby
+    - (Ruby OR BSD-2-Clause) AND (Ruby OR BSD-2-Clause OR GPL-1.0-or-later) AND BSD-3-Clause AND (GPL-3.0-or-later WITH Bison-exception-2.2) AND ISC AND LicenseRef-Fedora-Public-Domain AND MIT AND CC0 AND zlib AND Unicode-DFS-2015 AND HPND-Markus-Kuhn AND Ruby-pty
+  categories:
+    - Unspecified
   vulnerable: true
 - repo: fedora_43
   subrepo: release
@@ -9655,15 +10169,6 @@
   categories:
     - Unspecified
   vulnerable: true
-- repo: gnuguix
-  srcname: ruby
-  binname: ruby
-  visiblename: ruby
-  version: 3.4.7
-  origversion: null
-  status: legacy
-  summary: Programming language interpreter
-  vulnerable: true
 - repo: fedora_44
   subrepo: release
   srcname: ruby
@@ -9702,6 +10207,16 @@
   categories:
     - Unspecified
   vulnerable: true
+- repo: kiss_community
+  subrepo: community
+  srcname: ruby
+  visiblename: ruby
+  version: 3.1.2
+  origversion: null
+  status: outdated
+  maintainers:
+    - mmatongo_@hotmail.com
+  vulnerable: true
 - repo: freebsd
   srcname: lang/ruby33
   binname: ruby33
@@ -9727,31 +10242,6 @@
     - ruby@freebsd.org
   categories:
     - lang
-  vulnerable: true
-- repo: freebsd
-  srcname: lang/ruby40
-  binname: ruby40
-  visiblename: lang/ruby40
-  version: 4.0.7
-  origversion: 4.0.7,1
-  status: outdated
-  summary: Object-oriented interpreted scripting language
-  maintainers:
-    - ruby@freebsd.org
-  categories:
-    - lang
-  vulnerable: true
-- repo: nix_stable_25_11
-  srcname: ruby_4_0
-  visiblename: ruby
-  version: 4.0.3
-  origversion: null
-  status: outdated
-  summary: Object-oriented language for quick and easy programming
-  maintainers:
-    - m.fellinger@gmail.com
-  licenses:
-    - Ruby
   vulnerable: true
 - repo: gentoo
   srcname: dev-lang/ruby
@@ -9795,20 +10285,23 @@
   categories:
     - dev-lang
   vulnerable: true
-- repo: gnuguix
+- repo: manjaro_unstable
+  subrepo: extra
   srcname: ruby
   binname: ruby
   visiblename: ruby
-  version: 4.0.5
-  origversion: null
+  version: 3.4.10
+  origversion: 3.4.10-1
   status: outdated
-  summary: Programming language interpreter
+  summary: An object-oriented language for quick and easy programming
+  licenses:
+    - BSD-2-Clause
   vulnerable: true
 - repo: gnuguix
   srcname: ruby
   binname: ruby
   visiblename: ruby
-  version: 3.3.12
+  version: 3.4.7
   origversion: null
   status: legacy
   summary: Programming language interpreter
@@ -9822,36 +10315,6 @@
   summary: An object-oriented language for quick and easy programming
   licenses:
     - GNU General Public License (GPL)
-  vulnerable: true
-- repo: kali_rolling
-  subrepo: main
-  srcname: ruby3.3
-  binnames:
-    - ruby3.3
-    - libruby3.3
-    - ruby3.3-dev
-    - ruby3.3-doc
-  visiblename: ruby3.3
-  version: 3.3.8
-  origversion: 3.3.8-2.2
-  status: outdated
-  maintainers:
-    - pkg-ruby-extras-maintainers@lists.alioth.debian.org
-    - kanashiro@debian.org
-    - terceiro@debian.org
-    - utkarsh@debian.org
-  categories:
-    - misc
-  vulnerable: true
-- repo: kiss_community
-  subrepo: community
-  srcname: ruby
-  visiblename: ruby
-  version: 3.1.2
-  origversion: null
-  status: outdated
-  maintainers:
-    - mmatongo_@hotmail.com
   vulnerable: true
 - repo: liguros_stable
   srcname: dev-lang/ruby
@@ -9883,25 +10346,10 @@
   categories:
     - dev-lang
   vulnerable: true
-- repo: liguros_develop
+- repo: liguros_stable
   srcname: dev-lang/ruby
   visiblename: dev-lang/ruby
-  version: 4.0.7
-  origversion: null
-  status: legacy
-  summary: An object-oriented scripting language
-  maintainers:
-    - dev@liguros.net
-    - ruby@gentoo.org
-  licenses:
-    - '|| ( Ruby-BSD BSD-2 )'
-  categories:
-    - dev-lang
-  vulnerable: true
-- repo: liguros_develop
-  srcname: dev-lang/ruby
-  visiblename: dev-lang/ruby
-  version: 3.3.12
+  version: 3.4.4
   origversion: null
   status: legacy
   summary: An object-oriented scripting language
@@ -10099,6 +10547,31 @@
   categories:
     - lang
   vulnerable: true
+- repo: nix_stable_24_05
+  srcname: ruby_3_3
+  visiblename: ruby
+  version: 3.3.5
+  origversion: null
+  status: outdated
+  summary: An object-oriented language for quick and easy programming
+  maintainers:
+    - rahul@gopinath.org
+    - m.fellinger@gmail.com
+  licenses:
+    - Ruby
+  vulnerable: true
+- repo: nix_stable_24_11
+  srcname: ruby
+  visiblename: ruby
+  version: 3.3.8
+  origversion: null
+  status: legacy
+  summary: Object-oriented language for quick and easy programming
+  maintainers:
+    - m.fellinger@gmail.com
+  licenses:
+    - Ruby
+  vulnerable: true
 - repo: mageia_10
   subrepo: core/release
   srcname: ruby
@@ -10219,79 +10692,6 @@
   licenses:
     - BSD-2-Clause
   vulnerable: true
-- repo: manjaro_unstable
-  subrepo: extra
-  srcname: ruby
-  binname: ruby
-  visiblename: ruby
-  version: 3.4.10
-  origversion: 3.4.10-1
-  status: outdated
-  summary: An object-oriented language for quick and easy programming
-  licenses:
-    - BSD-2-Clause
-  vulnerable: true
-- repo: msys2_msys2
-  subrepo: x86_64
-  srcname: ruby
-  binname: ruby-docs
-  visiblename: ruby-docs
-  version: 3.4.10
-  origversion: 3.4.10-1
-  status: outdated
-  summary: Documentation files for ruby
-  licenses:
-    - spdx:Ruby OR BSD-2-Clause
-  vulnerable: true
-- repo: msys2_msys2
-  subrepo: x86_64
-  srcname: ruby
-  binname: ruby
-  visiblename: ruby
-  version: 3.4.10
-  origversion: 3.4.10-1
-  status: outdated
-  summary: An object-oriented language for quick and easy programming
-  licenses:
-    - spdx:Ruby OR BSD-2-Clause
-  vulnerable: true
-- repo: nix_stable_24_05
-  srcname: ruby_3_3
-  visiblename: ruby
-  version: 3.3.5
-  origversion: null
-  status: outdated
-  summary: An object-oriented language for quick and easy programming
-  maintainers:
-    - rahul@gopinath.org
-    - m.fellinger@gmail.com
-  licenses:
-    - Ruby
-  vulnerable: true
-- repo: nix_stable_24_11
-  srcname: ruby
-  visiblename: ruby
-  version: 3.3.8
-  origversion: null
-  status: legacy
-  summary: Object-oriented language for quick and easy programming
-  maintainers:
-    - m.fellinger@gmail.com
-  licenses:
-    - Ruby
-  vulnerable: true
-- repo: nix_stable_24_11
-  srcname: ruby_3_4
-  visiblename: ruby
-  version: 3.4.3
-  origversion: null
-  status: outdated
-  summary: Object-oriented language for quick and easy programming
-  maintainers:
-    - m.fellinger@gmail.com
-  licenses:
-    - Ruby
-  vulnerable: true
 - repo: nix_stable_25_05
   srcname: ruby
   visiblename: ruby
@@ -10322,6 +10722,30 @@
   version: 3.3.10
   origversion: null
   status: legacy
+  summary: Object-oriented language for quick and easy programming
+  maintainers:
+    - m.fellinger@gmail.com
+  licenses:
+    - Ruby
+  vulnerable: true
+- repo: nix_stable_25_11
+  srcname: ruby_3_4
+  visiblename: ruby
+  version: 3.4.8
+  origversion: null
+  status: legacy
+  summary: Object-oriented language for quick and easy programming
+  maintainers:
+    - m.fellinger@gmail.com
+  licenses:
+    - Ruby
+  vulnerable: true
+- repo: nix_stable_25_11
+  srcname: ruby_4_0
+  visiblename: ruby
+  version: 4.0.3
+  origversion: null
+  status: outdated
   summary: Object-oriented language for quick and easy programming
   maintainers:
     - m.fellinger@gmail.com
@@ -10581,6 +11005,54 @@
   categories:
     - Development/Ruby
   vulnerable: true
+- repo: openindiana
+  subrepo: hipster
+  srcname: ruby
+  binname: runtime/ruby-40
+  visiblename: ruby
+  version: 4.0.4
+  origversion: null
+  status: legacy
+  summary: Ruby, RubyGems, and Rake
+  categories:
+    - Development/Ruby
+  vulnerable: true
+- repo: openindiana
+  subrepo: hipster
+  srcname: ruby
+  binname: runtime/ruby-40
+  visiblename: ruby
+  version: 4.0.5
+  origversion: null
+  status: legacy
+  summary: Ruby, RubyGems, and Rake
+  categories:
+    - Development/Ruby
+  vulnerable: true
+- repo: openindiana
+  subrepo: hipster
+  srcname: ruby
+  binname: runtime/ruby-40
+  visiblename: ruby
+  version: 4.0.6
+  origversion: null
+  status: legacy
+  summary: Ruby, RubyGems, and Rake
+  categories:
+    - Development/Ruby
+  vulnerable: true
+- repo: openindiana
+  subrepo: hipster
+  srcname: ruby
+  binname: runtime/ruby-40
+  visiblename: ruby
+  version: 4.0.7
+  origversion: null
+  status: legacy
+  summary: Ruby, RubyGems, and Rake
+  categories:
+    - Development/Ruby
+  vulnerable: true
 - repo: openkylin_3_0
   subrepo: huanghe-proposed/main
   srcname: ruby3.3
@@ -10706,18 +11178,6 @@
     - Development/Ruby
   vulnerable: true
 - repo: openpkg_current
-  srcname: ruby18
-  visiblename: ruby18
-  version: 1.8.7p358
-  origversion: null
-  status: legacy
-  summary: The Ruby Scripting Language
-  licenses:
-    - GPL
-  categories:
-    - Language
-  vulnerable: true
-- repo: openpkg_current
   srcname: ruby
   visiblename: ruby
   version: 4.0.0
@@ -10741,6 +11201,18 @@
     - MIT
   categories:
     - Development/Languages/Ruby
+  vulnerable: true
+- repo: parabola
+  subrepo: libre
+  srcname: ruby
+  binname: ruby-bundled-gems
+  visiblename: ruby-bundled-gems
+  version: 3.4.8
+  origversion: 3.4.8-2.parabola1
+  status: outdated
+  summary: Depends on optional gems that are installed by default with Ruby
+  licenses:
+    - BSD-2-Clause
   vulnerable: true
 - repo: opensuse_leap_15_5
   subrepo: main/oss
@@ -10774,6 +11246,32 @@
   visiblename: ruby2.5
   version: 2.5.9
   origversion: 2.5.9-150000.4.32.1
+  status: outdated
+  summary: An Interpreted Object-Oriented Scripting Language
+  licenses:
+    - BSD-2-Clause OR Ruby
+  categories:
+    - Development/Languages/Ruby
+  vulnerable: true
+- repo: opensuse_leap_15_6
+  subrepo: main/oss
+  srcname: ruby
+  visiblename: ruby
+  version: "2.5"
+  origversion: 2.5-1.21
+  status: legacy
+  summary: An Interpreted Object-Oriented Scripting Language
+  licenses:
+    - MIT
+  categories:
+    - Development/Languages/Ruby
+  vulnerable: true
+- repo: opensuse_leap_15_6
+  subrepo: main/oss
+  srcname: ruby2.5
+  visiblename: ruby2.5
+  version: 2.5.9
+  origversion: 2.5.9-150000.4.29.1
   status: outdated
   summary: An Interpreted Object-Oriented Scripting Language
   licenses:
@@ -10859,32 +11357,6 @@
   categories:
     - Development/Languages/Ruby
   vulnerable: true
-- repo: opensuse_leap_15_6
-  subrepo: main/oss
-  srcname: ruby
-  visiblename: ruby
-  version: "2.5"
-  origversion: 2.5-1.21
-  status: legacy
-  summary: An Interpreted Object-Oriented Scripting Language
-  licenses:
-    - MIT
-  categories:
-    - Development/Languages/Ruby
-  vulnerable: true
-- repo: opensuse_leap_15_6
-  subrepo: main/oss
-  srcname: ruby2.5
-  visiblename: ruby2.5
-  version: 2.5.9
-  origversion: 2.5.9-150000.4.29.1
-  status: outdated
-  summary: An Interpreted Object-Oriented Scripting Language
-  licenses:
-    - BSD-2-Clause OR Ruby
-  categories:
-    - Development/Languages/Ruby
-  vulnerable: true
 - repo: opensuse_tumbleweed
   subrepo: src-oss
   srcname: ruby
@@ -10903,17 +11375,18 @@
   categories:
     - Development/Languages/Ruby
   vulnerable: true
-- repo: parabola
-  subrepo: libre
-  srcname: ruby
-  binname: ruby
-  visiblename: ruby
-  version: 3.4.8
-  origversion: 3.4.8-2.parabola1
-  status: outdated
-  summary: An object-oriented language for quick and easy programming
-  licenses:
-    - BSD-2-Clause
+- repo: pkgsrc_2026_3
+  srcname: lang/ruby34
+  binname: ruby34
+  visiblename: lang/ruby34
+  version: 3.4.11
+  origversion: null
+  status: legacy
+  summary: Ruby 3.4.11 release package
+  maintainers:
+    - taca@netbsd.org
+  categories:
+    - lang
   vulnerable: true
 - repo: openwrt_24_10_x86_64
   subrepo: packages
@@ -10993,6 +11466,18 @@
   categories:
     - lang
   vulnerable: true
+- repo: parabola
+  subrepo: libre
+  srcname: ruby
+  binname: ruby-docs
+  visiblename: ruby-docs
+  version: 3.4.8
+  origversion: 3.4.8-2.parabola1
+  status: outdated
+  summary: Documentation files for Ruby
+  licenses:
+    - BSD-2-Clause
+  vulnerable: true
 - repo: openwrt_24_10_x86_64
   subrepo: packages
   srcname: feeds/packages/lang/ruby
@@ -11006,18 +11491,6 @@
   categories:
     - lang
   vulnerable: true
-- repo: parabola
-  subrepo: libre
-  srcname: ruby
-  binname: ruby-stdlib
-  visiblename: ruby-stdlib
-  version: 3.4.8
-  origversion: 3.4.8-2.parabola1
-  status: outdated
-  summary: Depends on the full Ruby standard library; both default gems and bundled gems
-  licenses:
-    - BSD-2-Clause
-  vulnerable: true
 - repo: openwrt_24_10_x86_64
   subrepo: packages
   srcname: feeds/packages/lang/ruby
@@ -11028,6 +11501,19 @@
   status: outdated
   maintainers:
     - luizluca@gmail.com
+  categories:
+    - lang
+  vulnerable: true
+- repo: pkgsrc_2026_3
+  srcname: lang/ruby33
+  binname: ruby33
+  visiblename: lang/ruby33
+  version: 3.3.12
+  origversion: 3.3.12nb2
+  status: legacy
+  summary: Ruby 3.3.12 release package
+  maintainers:
+    - taca@netbsd.org
   categories:
     - lang
   vulnerable: true
@@ -12149,19 +12635,6 @@
   categories:
     - lang
   vulnerable: true
-- repo: pkgsrc_2026_3
-  srcname: lang/ruby33
-  binname: ruby33
-  visiblename: lang/ruby33
-  version: 3.3.12
-  origversion: 3.3.12nb2
-  status: legacy
-  summary: Ruby 3.3.12 release package
-  maintainers:
-    - taca@netbsd.org
-  categories:
-    - lang
-  vulnerable: true
 - repo: openwrt_24_10_x86_64
   subrepo: packages
   srcname: feeds/packages/lang/ruby
@@ -12279,6 +12752,19 @@
   categories:
     - lang
   vulnerable: true
+- repo: pkgsrc_2026_3
+  srcname: lang/ruby40
+  binname: ruby40
+  visiblename: lang/ruby40
+  version: 4.0.7
+  origversion: null
+  status: outdated
+  summary: Ruby 4.0.7 release package
+  maintainers:
+    - taca@netbsd.org
+  categories:
+    - lang
+  vulnerable: true
 - repo: openwrt_24_10_x86_64
   subrepo: packages
   srcname: feeds/packages/lang/ruby
@@ -12369,6 +12855,42 @@
 - repo: parabola
   subrepo: libre
   srcname: ruby
+  binname: ruby
+  visiblename: ruby
+  version: 3.4.8
+  origversion: 3.4.8-2.parabola1
+  status: outdated
+  summary: An object-oriented language for quick and easy programming
+  licenses:
+    - BSD-2-Clause
+  vulnerable: true
+- repo: parabola
+  subrepo: libre
+  srcname: ruby
+  binname: ruby-stdlib
+  visiblename: ruby-stdlib
+  version: 3.4.8
+  origversion: 3.4.8-2.parabola1
+  status: outdated
+  summary: Depends on the full Ruby standard library; both default gems and bundled gems
+  licenses:
+    - BSD-2-Clause
+  vulnerable: true
+- repo: parabola
+  subrepo: libre
+  srcname: ruby
+  binname: ruby-default-gems
+  visiblename: ruby-default-gems
+  version: 3.4.8
+  origversion: 3.4.8-2.parabola1
+  status: outdated
+  summary: Depends on gems that are a part of Ruby and can always be required directly
+  licenses:
+    - BSD-2-Clause
+  vulnerable: true
+- repo: parabola
+  subrepo: libre
+  srcname: ruby
   binname: ruby-bundled-gems-bootstrap
   visiblename: ruby-bundled-gems-bootstrap
   version: 3.4.8
@@ -12419,26 +12941,6 @@
     - misc
   vulnerable: true
 - repo: parrot
-  subrepo: parrot-updates/main
-  srcname: ruby3.3
-  binnames:
-    - ruby3.3
-    - libruby3.3
-    - ruby3.3-dev
-    - ruby3.3-doc
-  visiblename: ruby3.3
-  version: 3.3.8
-  origversion: 3.3.8-2
-  status: outdated
-  maintainers:
-    - pkg-ruby-extras-maintainers@lists.alioth.debian.org
-    - kanashiro@debian.org
-    - terceiro@debian.org
-    - utkarsh@debian.org
-  categories:
-    - ruby
-  vulnerable: true
-- repo: parrot
   subrepo: parrot/main
   srcname: ruby3.3
   binnames:
@@ -12457,6 +12959,26 @@
     - utkarsh@debian.org
   categories:
     - misc
+  vulnerable: true
+- repo: parrot
+  subrepo: parrot-updates/main
+  srcname: ruby3.3
+  binnames:
+    - ruby3.3
+    - libruby3.3
+    - ruby3.3-dev
+    - ruby3.3-doc
+  visiblename: ruby3.3
+  version: 3.3.8
+  origversion: 3.3.8-2
+  status: outdated
+  maintainers:
+    - pkg-ruby-extras-maintainers@lists.alioth.debian.org
+    - kanashiro@debian.org
+    - terceiro@debian.org
+    - utkarsh@debian.org
+  categories:
+    - ruby
   vulnerable: true
 - repo: pisi_main
   subrepo: main
@@ -12499,37 +13021,44 @@
   categories:
     - lang
   vulnerable: true
-- repo: pkgsrc_2026_3
-  srcname: lang/ruby40
-  binname: ruby40
-  visiblename: lang/ruby40
-  version: 4.0.7
-  origversion: null
-  status: outdated
-  summary: Ruby 4.0.7 release package
+- repo: pkgsrc_2026_2
+  srcname: lang/ruby34
+  binname: ruby34
+  visiblename: lang/ruby34
+  version: 3.4.9
+  origversion: 3.4.9nb2
+  status: legacy
+  summary: Ruby 3.4.9 release package
   maintainers:
     - taca@netbsd.org
   categories:
     - lang
   vulnerable: true
-- repo: pureos_amber
-  subrepo: amber/main
-  srcname: ruby2.3
-  binnames:
-    - libruby2.3
-    - ruby2.3
-    - ruby2.3-dev
-    - ruby2.3-doc
-    - ruby2.3-tcltk
-  visiblename: ruby2.3
-  version: 2.3.6
-  origversion: 2.3.6-2
-  status: legacy
+- repo: pkgsrc_2026_2
+  srcname: lang/ruby40
+  binname: ruby40
+  visiblename: lang/ruby40
+  version: 4.0.5
+  origversion: null
+  status: outdated
+  summary: Ruby 4.0.5 release package
   maintainers:
-    - terceiro@debian.org
-    - zeha@debian.org
+    - taca@netbsd.org
   categories:
-    - libs
+    - lang
+  vulnerable: true
+- repo: pkgsrc_2026_3
+  srcname: lang/ruby
+  binname: ruby
+  visiblename: lang/ruby
+  version: 3.4.11
+  origversion: null
+  status: legacy
+  summary: Wrapper package for Ruby programming language
+  maintainers:
+    - taca@netbsd.org
+  categories:
+    - lang
   vulnerable: true
 - repo: pureos_amber
   subrepo: amber/main
@@ -12913,21 +13442,6 @@
   subrepo: AppStream
   srcname: ruby
   visiblename: ruby
-  version: 3.3.10
-  origversion: 3.3.10-7.module+el8.10.0+40227+8cae5065
-  status: legacy
-  summary: An interpreter of object-oriented scripting language
-  maintainers:
-    - infrastructure@rockylinux.org
-  licenses:
-    - (Ruby OR BSD-2-Clause) AND (Ruby OR BSD-2-Clause OR GPL-1.0-or-later) AND BSD-3-Clause AND (GPL-3.0-or-later WITH Bison-exception-2.2) AND ISC AND LicenseRef-Fedora-Public-Domain AND MIT AND CC0 AND zlib AND Unicode-DFS-2015 AND HPND-Markus-Kuhn AND Ruby-pty
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: rocky_8
-  subrepo: AppStream
-  srcname: ruby
-  visiblename: ruby
   version: 3.3.12
   origversion: 3.3.12-8.module+el8.10.0+40269+dc93e2d1
   status: outdated
@@ -13026,26 +13540,6 @@
   categories:
     - Unspecified
   vulnerable: true
-- repo: ubuntu_20_04
-  subrepo: focal/main
-  srcname: ruby2.7
-  binnames:
-    - ruby2.7
-    - libruby2.7
-    - ruby2.7-dev
-    - ruby2.7-doc
-  visiblename: ruby2.7
-  version: 2.7.0
-  origversion: 2.7.0-5ubuntu1
-  status: outdated
-  maintainers:
-    - ubuntu-devel-discuss@lists.ubuntu.com
-    - kanashiro@debian.org
-    - terceiro@debian.org
-    - zeha@debian.org
-  categories:
-    - misc
-  vulnerable: true
 - repo: ubuntu_22_04
   subrepo: jammy/main
   srcname: ruby3.0
@@ -13057,6 +13551,26 @@
   visiblename: ruby3.0
   version: 3.0.2
   origversion: 3.0.2-7ubuntu2
+  status: outdated
+  maintainers:
+    - ubuntu-devel-discuss@lists.ubuntu.com
+    - kanashiro@debian.org
+    - terceiro@debian.org
+    - utkarsh@debian.org
+  categories:
+    - misc
+  vulnerable: true
+- repo: ubuntu_22_04
+  subrepo: jammy-updates/main
+  srcname: ruby3.0
+  binnames:
+    - ruby3.0
+    - libruby3.0
+    - ruby3.0-dev
+    - ruby3.0-doc
+  visiblename: ruby3.0
+  version: 3.0.2
+  origversion: 3.0.2-7ubuntu2.13
   status: outdated
   maintainers:
     - ubuntu-devel-discuss@lists.ubuntu.com
@@ -13317,526 +13831,4 @@
     - (Ruby OR BSD-2-Clause) AND (Ruby OR BSD-2-Clause OR GPL-1.0-or-later) AND BSD-3-Clause AND (GPL-3.0-or-later WITH Bison-exception-2.2) AND ISC AND LicenseRef-Fedora-Public-Domain AND MIT AND CC0-1.0 AND zlib AND Unicode-DFS-2015 AND HPND-Markus-Kuhn AND Ruby-pty
   categories:
     - Unspecified
-  vulnerable: true
-- repo: rocky_9
-  subrepo: AppStream
-  srcname: ruby
-  binnames:
-    - ruby
-    - ruby-devel
-    - ruby-libs
-    - rubygems
-    - rubygems-devel
-    - ruby-default-gems
-    - rubygem-irb
-    - rubygem-rdoc
-    - ruby-doc
-    - rubygem-bigdecimal
-    - rubygem-io-console
-    - rubygem-json
-    - rubygem-psych
-    - rubygem-bundler
-    - ruby-bundled-gems
-    - rubygem-minitest
-    - rubygem-power_assert
-    - rubygem-rake
-    - rubygem-rbs
-    - rubygem-test-unit
-    - rubygem-racc
-    - rubygem-rexml
-    - rubygem-rss
-    - rubygem-typeprof
-    - ruby-debuginfo
-    - ruby-debugsource
-  visiblename: ruby
-  version: 4.0.6
-  origversion: 4.0.6-34.module+el9.8.0+40271+b5850c84
-  status: outdated
-  summary: An interpreter of object-oriented scripting language
-  maintainers:
-    - releng@rockylinux.org
-  licenses:
-    - (Ruby OR BSD-2-Clause) AND (Ruby OR BSD-2-Clause OR GPL-1.0-or-later) AND BSD-3-Clause AND (GPL-3.0-or-later WITH Bison-exception-2.2) AND ISC AND LicenseRef-Fedora-Public-Domain AND MIT AND CC0-1.0 AND zlib AND Unicode-DFS-2015 AND HPND-Markus-Kuhn AND Ruby-pty
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: rocky_9
-  subrepo: AppStream
-  srcname: ruby
-  binnames:
-    - ruby
-    - ruby-devel
-    - ruby-libs
-    - rubygems
-    - rubygems-devel
-    - ruby-default-gems
-    - rubygem-irb
-    - rubygem-rdoc
-    - ruby-doc
-    - rubygem-bigdecimal
-    - rubygem-io-console
-    - rubygem-json
-    - rubygem-psych
-    - rubygem-bundler
-    - ruby-bundled-gems
-    - rubygem-minitest
-    - rubygem-power_assert
-    - rubygem-rake
-    - rubygem-rbs
-    - rubygem-test-unit
-    - rubygem-racc
-    - rubygem-rexml
-    - rubygem-rss
-    - rubygem-typeprof
-    - ruby-debuginfo
-    - ruby-debugsource
-  visiblename: ruby
-  version: 4.0.6
-  origversion: 4.0.6-35.module+el9.8.0+40337+8ded9c5e
-  status: outdated
-  summary: An interpreter of object-oriented scripting language
-  maintainers:
-    - releng@rockylinux.org
-  licenses:
-    - (Ruby OR BSD-2-Clause) AND (Ruby OR BSD-2-Clause OR GPL-1.0-or-later) AND BSD-3-Clause AND (GPL-3.0-or-later WITH Bison-exception-2.2) AND ISC AND LicenseRef-Fedora-Public-Domain AND MIT AND CC0-1.0 AND zlib AND Unicode-DFS-2015 AND HPND-Markus-Kuhn AND Ruby-pty
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: side
-  srcname: development/toolchain/ruby
-  visiblename: ruby
-  version: 3.4.5
-  origversion: null
-  status: outdated
-  summary: An object-oriented scripting language.
-  maintainers:
-    - uglyside@yandex.ru
-  licenses:
-    - Ruby/BSD-2-Clase/MIT
-  vulnerable: true
-- repo: slackware_15_0
-  subrepo: slackware
-  binname: ruby
-  visiblename: ruby
-  version: 3.0.3
-  origversion: null
-  status: legacy
-  maintainers:
-    - volkerdi@slackware.com
-  vulnerable: true
-- repo: slackware64_15_0
-  subrepo: slackware64
-  binname: ruby
-  visiblename: ruby
-  version: 3.0.3
-  origversion: null
-  status: legacy
-  maintainers:
-    - volkerdi@slackware.com
-  vulnerable: true
-- repo: slackwarearm_15_0
-  subrepo: slackware
-  binname: ruby
-  visiblename: ruby
-  version: 3.0.3
-  origversion: null
-  status: legacy
-  maintainers:
-    - volkerdi@slackware.com
-  vulnerable: true
-- repo: tur
-  srcname: ruby-2
-  binname: ruby-2
-  visiblename: ruby-2
-  version: 2.7.6
-  origversion: null
-  status: outdated
-  summary: Dynamic programming language with a focus on simplicity and productivity (Version 2)
-  maintainers:
-    - termux-user-repository@github
-  vulnerable: true
-- repo: ubi_8
-  subrepo: appstream
-  srcname: ruby
-  visiblename: ruby
-  version: 2.6.10
-  origversion: 2.6.10-109.module+el8.6.0+15475+c55337b4
-  status: legacy
-  summary: An interpreter of object-oriented scripting language
-  licenses:
-    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: ubi_8
-  subrepo: appstream
-  srcname: ruby
-  visiblename: ruby
-  version: 3.3.12
-  origversion: 3.3.12-9.module+el8.10.0+24850+a62b5b25
-  status: outdated
-  summary: An interpreter of object-oriented scripting language
-  licenses:
-    - (Ruby OR BSD-2-Clause) AND (Ruby OR BSD-2-Clause OR GPL-1.0-or-later) AND BSD-3-Clause AND (GPL-3.0-or-later WITH Bison-exception-2.2) AND ISC AND LicenseRef-Fedora-Public-Domain AND MIT AND CC0 AND zlib AND Unicode-DFS-2015 AND HPND-Markus-Kuhn AND Ruby-pty
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: ubi_8
-  subrepo: appstream
-  srcname: ruby
-  visiblename: ruby
-  version: 2.5.9
-  origversion: 2.5.9-116.module+el8.10.0+24853+52b5af56
-  status: legacy
-  summary: An interpreter of object-oriented scripting language
-  licenses:
-    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
-  categories:
-    - Development/Languages
-  vulnerable: true
-- repo: ubuntu_14_04
-  subrepo: trusty/main
-  srcname: ruby1.9.1
-  binnames:
-    - ruby1.9.1
-    - libruby1.9.1
-    - libruby1.9.1-dbg
-    - ruby1.9.1-dev
-    - libtcltk-ruby1.9.1
-    - ruby1.9.1-examples
-    - ri1.9.1
-    - ruby1.9.1-full
-    - ruby1.9.3
-  visiblename: ruby1.9.1
-  version: 1.9.3.484
-  origversion: 1.9.3.484-2ubuntu1
-  status: legacy
-  maintainers:
-    - ubuntu-devel-discuss@lists.ubuntu.com
-    - akira@debian.org
-    - daigo@debian.org
-    - lucas@debian.org
-  categories:
-    - ruby
-  vulnerable: true
-- repo: ubuntu_14_04
-  subrepo: trusty/main
-  srcname: ruby2.0
-  binnames:
-    - ruby2.0
-    - libruby2.0
-    - ruby2.0-dev
-    - ruby2.0-doc
-    - ruby2.0-tcltk
-  visiblename: ruby2.0
-  version: 2.0.0.484
-  origversion: 2.0.0.484-1ubuntu2
-  status: outdated
-  maintainers:
-    - ubuntu-devel-discuss@lists.ubuntu.com
-    - zeha@debian.org
-  categories:
-    - misc
-  vulnerable: true
-- repo: ubuntu_14_04
-  subrepo: trusty-updates/main
-  srcname: ruby1.9.1
-  binnames:
-    - ruby1.9.1
-    - libruby1.9.1
-    - libruby1.9.1-dbg
-    - ruby1.9.1-dev
-    - libtcltk-ruby1.9.1
-    - ruby1.9.1-examples
-    - ri1.9.1
-    - ruby1.9.1-full
-    - ruby1.9.3
-  visiblename: ruby1.9.1
-  version: 1.9.3.484
-  origversion: 1.9.3.484-2ubuntu1.14
-  status: legacy
-  maintainers:
-    - ubuntu-devel-discuss@lists.ubuntu.com
-    - akira@debian.org
-    - daigo@debian.org
-    - lucas@debian.org
-  categories:
-    - ruby
-  vulnerable: true
-- repo: ubuntu_14_04
-  subrepo: trusty-updates/main
-  srcname: ruby2.0
-  binnames:
-    - ruby2.0
-    - libruby2.0
-    - ruby2.0-dev
-    - ruby2.0-doc
-    - ruby2.0-tcltk
-  visiblename: ruby2.0
-  version: 2.0.0.484
-  origversion: 2.0.0.484-1ubuntu2.13
-  status: outdated
-  maintainers:
-    - ubuntu-devel-discuss@lists.ubuntu.com
-    - zeha@debian.org
-  categories:
-    - misc
-  vulnerable: true
-- repo: ubuntu_16_04
-  subrepo: xenial-updates/main
-  srcname: ruby2.3
-  binnames:
-    - ruby2.3
-    - libruby2.3
-    - libruby2.3-dbg
-    - ruby2.3-dev
-    - ruby2.3-doc
-    - ruby2.3-tcltk
-  visiblename: ruby2.3
-  version: 2.3.1
-  origversion: 2.3.1-2~ubuntu16.04.16
-  status: outdated
-  maintainers:
-    - ubuntu-devel-discuss@lists.ubuntu.com
-    - zeha@debian.org
-  categories:
-    - misc
-  vulnerable: true
-- repo: ubuntu_16_04
-  subrepo: xenial/main
-  srcname: ruby2.3
-  binnames:
-    - ruby2.3
-    - libruby2.3
-    - libruby2.3-dbg
-    - ruby2.3-dev
-    - ruby2.3-doc
-    - ruby2.3-tcltk
-  visiblename: ruby2.3
-  version: 2.3.0
-  origversion: 2.3.0-5ubuntu1
-  status: legacy
-  maintainers:
-    - terceiro@debian.org
-    - zeha@debian.org
-  categories:
-    - misc
-  vulnerable: true
-- repo: ubuntu_18_04
-  subrepo: bionic/main
-  srcname: ruby2.5
-  binnames:
-    - ruby2.5
-    - libruby2.5
-    - ruby2.5-dev
-    - ruby2.5-doc
-  visiblename: ruby2.5
-  version: 2.5.1
-  origversion: 2.5.1-1ubuntu1
-  status: outdated
-  maintainers:
-    - pkg-ruby-extras-maintainers@lists.alioth.debian.org
-    - terceiro@debian.org
-    - zeha@debian.org
-  categories:
-    - misc
-  vulnerable: true
-- repo: ubuntu_18_04
-  subrepo: bionic-updates/main
-  srcname: ruby2.5
-  binnames:
-    - ruby2.5
-    - libruby2.5
-    - ruby2.5-dev
-    - ruby2.5-doc
-  visiblename: ruby2.5
-  version: 2.5.1
-  origversion: 2.5.1-1ubuntu1.16
-  status: outdated
-  maintainers:
-    - ubuntu-devel-discuss@lists.ubuntu.com
-    - terceiro@debian.org
-    - zeha@debian.org
-  categories:
-    - misc
-  vulnerable: true
-- repo: ubuntu_20_04
-  subrepo: focal-updates/main
-  srcname: ruby2.7
-  binnames:
-    - ruby2.7
-    - libruby2.7
-    - ruby2.7-dev
-    - ruby2.7-doc
-  visiblename: ruby2.7
-  version: 2.7.0
-  origversion: 2.7.0-5ubuntu1.18
-  status: outdated
-  maintainers:
-    - ubuntu-devel-discuss@lists.ubuntu.com
-    - kanashiro@debian.org
-    - terceiro@debian.org
-    - zeha@debian.org
-  categories:
-    - misc
-  vulnerable: true
-- repo: ubuntu_22_04
-  subrepo: jammy-updates/main
-  srcname: ruby3.0
-  binnames:
-    - ruby3.0
-    - libruby3.0
-    - ruby3.0-dev
-    - ruby3.0-doc
-  visiblename: ruby3.0
-  version: 3.0.2
-  origversion: 3.0.2-7ubuntu2.13
-  status: outdated
-  maintainers:
-    - ubuntu-devel-discuss@lists.ubuntu.com
-    - kanashiro@debian.org
-    - terceiro@debian.org
-    - utkarsh@debian.org
-  categories:
-    - misc
-  vulnerable: true
-- repo: ubuntu_25_04
-  subrepo: plucky/main
-  srcname: ruby3.3
-  binnames:
-    - ruby3.3
-    - libruby3.3
-    - ruby3.3-dev
-    - ruby3.3-doc
-  visiblename: ruby3.3
-  version: 3.3.7
-  origversion: 3.3.7-1ubuntu2
-  status: outdated
-  maintainers:
-    - ubuntu-devel-discuss@lists.ubuntu.com
-    - kanashiro@debian.org
-    - terceiro@debian.org
-    - utkarsh@debian.org
-  categories:
-    - misc
-  vulnerable: true
-- repo: ubuntu_25_04
-  subrepo: plucky-updates/main
-  srcname: ruby3.3
-  binnames:
-    - ruby3.3
-    - libruby3.3
-    - ruby3.3-dev
-    - ruby3.3-doc
-  visiblename: ruby3.3
-  version: 3.3.7
-  origversion: 3.3.7-1ubuntu2.1
-  status: outdated
-  maintainers:
-    - ubuntu-devel-discuss@lists.ubuntu.com
-    - kanashiro@debian.org
-    - terceiro@debian.org
-    - utkarsh@debian.org
-  categories:
-    - misc
-  vulnerable: true
-- repo: ubuntu_25_10
-  subrepo: questing-updates/main
-  srcname: ruby3.3
-  binnames:
-    - ruby3.3
-    - libruby3.3
-    - ruby3.3-dev
-    - ruby3.3-doc
-  visiblename: ruby3.3
-  version: 3.3.8
-  origversion: 3.3.8-2ubuntu2.1
-  status: outdated
-  maintainers:
-    - ubuntu-devel-discuss@lists.ubuntu.com
-    - kanashiro@debian.org
-    - terceiro@debian.org
-    - utkarsh@debian.org
-  categories:
-    - misc
-  vulnerable: true
-- repo: ubuntu_25_10
-  subrepo: questing/main
-  srcname: ruby3.3
-  binnames:
-    - ruby3.3
-    - libruby3.3
-    - ruby3.3-dev
-    - ruby3.3-doc
-  visiblename: ruby3.3
-  version: 3.3.8
-  origversion: 3.3.8-2ubuntu2
-  status: outdated
-  maintainers:
-    - ubuntu-devel-discuss@lists.ubuntu.com
-    - kanashiro@debian.org
-    - terceiro@debian.org
-    - utkarsh@debian.org
-  categories:
-    - misc
-  vulnerable: true
-- repo: ubuntu_26_04
-  subrepo: resolute/main
-  srcname: ruby3.3
-  binnames:
-    - ruby3.3
-    - libruby3.3
-    - ruby3.3-dev
-    - ruby3.3-doc
-  visiblename: ruby3.3
-  version: 3.3.8
-  origversion: 3.3.8-2ubuntu3
-  status: outdated
-  maintainers:
-    - ubuntu-devel-discuss@lists.ubuntu.com
-    - kanashiro@debian.org
-    - terceiro@debian.org
-    - utkarsh@debian.org
-  categories:
-    - misc
-  vulnerable: true
-- repo: ubuntu_26_04
-  subrepo: resolute-updates/main
-  srcname: ruby3.3
-  binnames:
-    - ruby3.3
-    - libruby3.3
-    - ruby3.3-dev
-    - ruby3.3-doc
-  visiblename: ruby3.3
-  version: 3.3.8
-  origversion: 3.3.8-2ubuntu3.1
-  status: outdated
-  maintainers:
-    - ubuntu-devel-discuss@lists.ubuntu.com
-    - kanashiro@debian.org
-    - terceiro@debian.org
-    - utkarsh@debian.org
-  categories:
-    - misc
-  vulnerable: true
-- repo: ubuntu_26_10
-  subrepo: stonking/main
-  srcname: ruby3.3
-  binnames:
-    - ruby3.3
-    - libruby3.3
-    - ruby3.3-dev
-    - ruby3.3-doc
-  visiblename: ruby3.3
-  version: 3.3.8
-  origversion: 3.3.8-2.2ubuntu4
-  status: outdated
-  maintainers:
-    - ubuntu-devel-discuss@lists.ubuntu.com
-    - kanashiro@debian.org
-    - terceiro@debian.org
-    - utkarsh@debian.org
-  categories:
-    - misc
   vulnerable: true
