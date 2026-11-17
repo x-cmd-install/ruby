@@ -14,15 +14,15 @@ x install ruby
 
 ## Code insight
 
-Total: **1,833,664** lines of code across **8671** files in the top 5 languages.
+Total: **1,835,126** lines of code across **8675** files in the top 5 languages.
 
 | Language | Code | Comments | Blanks | Files |
 |----------|-----:|---------:|-------:|------:|
-| Ruby | 1,216,887 | 76,117 | 202,864 | 7490 |
-| C | 364,620 | 98,455 | 57,954 | 535 |
-| Rust | 114,728 | 8,296 | 13,575 | 158 |
-| CHeader | 94,714 | 32,791 | 8,801 | 486 |
-| Happy | 14,760 | 0 | 1,621 | 2 |
+| Ruby | 1,217,845 | 76,219 | 203,004 | 7493 |
+| C | 364,386 | 98,510 | 58,010 | 536 |
+| Rust | 115,439 | 8,333 | 13,593 | 158 |
+| CHeader | 94,735 | 32,818 | 8,805 | 486 |
+| Happy | 14,763 | 0 | 1,620 | 2 |
 
 ## OpenSSF Scorecard
 
@@ -43,30 +43,30 @@ Lowest-scoring checks:
 ## Release
 
 - **Latest**: `v3_3_13` (2026-10-23)
-- **Last commit**: 2026-11-16
+- **Last commit**: 2026-11-17
 
 ## Popularity
 
-- **Stars**: 23,816 · **Forks**: 5,689 · **Open issues**: 0 · **Contributors**: 1,155
+- **Stars**: 23,821 · **Forks**: 5,689 · **Open issues**: 0 · **Contributors**: 1,157
 
 ## Totals (cumulative)
 
-- **Releases**: 87 · **Merged PRs**: 14507 · **Open PRs**: 819 · **Closed issues**: 0 · **Open issues**: 0 · **Commits**: 103944
+- **Releases**: 87 · **Merged PRs**: 14530 · **Open PRs**: 824 · **Closed issues**: 0 · **Open issues**: 0 · **Commits**: 104035
 
 ## Recent activity
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-10-17 | 4 | 334 | 121 | 0 | 0 | 806 |
-| last60d | 2026-09-17 | 6 | 755 | 183 | 0 | 0 | 2153 |
-| 90d | 2026-08-18 | 7 | 1198 | 228 | 0 | 0 | 3524 |
-| last180d | 2026-05-20 | 11 | 2289 | 333 | 0 | 0 | 6421 |
-| 360d | 2025-11-21 | 23 | 3736 | 413 | 0 | 0 | 9972 |
-| last720d | 2024-11-26 | 41 | 6396 | 533 | 0 | 0 | 15183 |
+| 30d | 2026-10-18 | 4 | 351 | 129 | 0 | 0 | 913 |
+| last60d | 2026-09-18 | 6 | 760 | 187 | 0 | 0 | 2261 |
+| 90d | 2026-08-19 | 7 | 1200 | 233 | 0 | 0 | 3633 |
+| last180d | 2026-05-21 | 10 | 2296 | 338 | 0 | 0 | 6530 |
+| 360d | 2025-11-22 | 23 | 3755 | 418 | 0 | 0 | 10081 |
+| last720d | 2024-11-27 | 41 | 6409 | 538 | 0 | 0 | 15223 |
 
 ## Distribution status
 
-Reported by **871** distros on [repology.org](https://repology.org/project/ruby). **49** are ✅ on the latest upstream release, **502** are ⚠️ on an older version.
+Reported by **849** distros on [repology.org](https://repology.org/project/ruby). **50** are ✅ on the latest upstream release, **502** are ⚠️ on an older version.
 
 | Distro | Version | Status |
 |--------|---------|--------|
@@ -76,7 +76,7 @@ Reported by **871** distros on [repology.org](https://repology.org/project/ruby)
 | Ubuntu 26.04 LTS | `3.3.8` | ⚠️ outdated |
 | Ubuntu 24.04 LTS | `3.2.3` | ⚠️ outdated |
 | Arch | `3.4.12` | ⚠️ outdated |
-| Homebrew | `3.1.7` | 🪦 legacy |
+| Homebrew | `4.0.9` | ✅ latest |
 | Fedora rawhide | `4.0.9` | ✅ latest |
 | Nix unstable | `3.4.12` | 🪦 legacy |
 | Void | `3.4.12` | ⚠️ outdated |
@@ -92,4 +92,4 @@ Install metadata for ruby lives in the [x-cmd/install](https://github.com/x-cmd/
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/261116.yml` · 2026-11-16T07:04:04Z._
+_Snapshot: `data/card/261117.yml` · 2026-11-17T09:53:10Z._
