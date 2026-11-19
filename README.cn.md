@@ -14,25 +14,25 @@ x install ruby
 
 ## 代码洞察
 
-合计: **1,835,126** 行代码（覆盖前 5 种语言、共 **8675** 个文件）。
+合计: **1,837,707** 行代码（覆盖前 5 种语言、共 **8677** 个文件）。
 
 | 语言 | 代码 | 注释 | 空行 | 文件数 |
 |------|-----:|-----:|-----:|------:|
-| Ruby | 1,217,845 | 76,219 | 203,004 | 7493 |
-| C | 364,386 | 98,510 | 58,010 | 536 |
-| Rust | 115,439 | 8,333 | 13,593 | 158 |
-| CHeader | 94,735 | 32,818 | 8,805 | 486 |
-| Happy | 14,763 | 0 | 1,620 | 2 |
+| Ruby | 1,218,713 | 76,375 | 203,154 | 7494 |
+| C | 365,685 | 99,124 | 58,327 | 536 |
+| Rust | 115,525 | 8,333 | 13,593 | 158 |
+| CHeader | 94,919 | 33,035 | 8,857 | 487 |
+| Happy | 14,791 | 0 | 1,624 | 2 |
 
 ## OpenSSF Scorecard 评分
 
-总评分: **7.4 / 10**
+总评分: **7.3 / 10**
 
 评分最低的几项:
 
-- **Code-Review** (1/10) — Found 5/27 approved changesets -- score normalized to 1
-- **Token-Permissions** (0/10) — detected GitHub workflow tokens with excessive permissions
+- **Code-Review** (2/10) — Found 5/21 approved changesets -- score normalized to 2
 - **Packaging** (-1/10) — packaging workflow not detected
+- **Token-Permissions** (0/10) — detected GitHub workflow tokens with excessive permissions
 
 ## 源代码
 
@@ -42,31 +42,31 @@ x install ruby
 
 ## 发布
 
-- **最新版本**: `v3_3_13` (2026-10-23)
-- **最近提交**: 2026-11-17
+- **最新版本**: `v4.0.10` (2026-11-18)
+- **最近提交**: 2026-11-19
 
 ## 流行度
 
-- **Star**: 23,821 · **Fork**: 5,689 · **开放 issue**: 0 · **贡献者**: 1,157
+- **Star**: 23,828 · **Fork**: 5,687 · **开放 issue**: 0 · **贡献者**: 1,157
 
 ## 累计统计
 
-- **发布数**: 87 · **已合并 PR**: 14530 · **开放 PR**: 824 · **已关闭 issue**: 0 · **开放 issue**: 0 · **提交数**: 104035
+- **发布数**: 90 · **已合并 PR**: 14582 · **开放 PR**: 835 · **已关闭 issue**: 0 · **开放 issue**: 0 · **提交数**: 104222
 
 ## 最近活动
 
 | 时间窗口 | 起始 | 发布 | 已合并 PR | 开放 PR | 已关闭 issue | 开放 issue | 提交 |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-10-18 | 4 | 351 | 129 | 0 | 0 | 913 |
-| last60d | 2026-09-18 | 6 | 760 | 187 | 0 | 0 | 2261 |
-| 90d | 2026-08-19 | 7 | 1200 | 233 | 0 | 0 | 3633 |
-| last180d | 2026-05-21 | 10 | 2296 | 338 | 0 | 0 | 6530 |
-| 360d | 2025-11-22 | 23 | 3755 | 418 | 0 | 0 | 10081 |
-| last720d | 2024-11-27 | 41 | 6409 | 538 | 0 | 0 | 15223 |
+| 30d | 2026-10-20 | 7 | 379 | 143 | 0 | 0 | 1123 |
+| last60d | 2026-09-20 | 9 | 791 | 203 | 0 | 0 | 2471 |
+| 90d | 2026-08-21 | 10 | 1218 | 251 | 0 | 0 | 3843 |
+| last180d | 2026-05-23 | 13 | 2322 | 350 | 0 | 0 | 6740 |
+| 360d | 2025-11-24 | 26 | 3797 | 429 | 0 | 0 | 10291 |
+| last720d | 2024-11-29 | 44 | 6432 | 549 | 0 | 0 | 15363 |
 
 ## 发行版状态
 
-在 [repology.org](https://repology.org/project/ruby) 上共有 **849** 个发行版报告此项目。**50** 个 ✅ 已是最新上游版本，**502** 个 ⚠️ 使用旧版本。
+在 [repology.org](https://repology.org/project/ruby) 上共有 **845** 个发行版报告此项目。**8** 个 ✅ 已是最新上游版本，**540** 个 ⚠️ 使用旧版本。
 
 | 发行版 | 版本 | 状态 |
 |--------|------|------|
@@ -76,12 +76,12 @@ x install ruby
 | Ubuntu 26.04 LTS | `3.3.8` | ⚠️ outdated |
 | Ubuntu 24.04 LTS | `3.2.3` | ⚠️ outdated |
 | Arch | `3.4.12` | ⚠️ outdated |
-| Homebrew | `4.0.9` | ✅ latest |
-| Fedora rawhide | `4.0.9` | ✅ latest |
+| Homebrew | `4.0.10` | ✅ latest |
+| Fedora rawhide | `4.0.9` | ⚠️ outdated |
 | Nix unstable | `3.4.12` | 🪦 legacy |
 | Void | `3.4.12` | ⚠️ outdated |
-| Alpine edge | `3.4.12` | ⚠️ outdated |
-| openSUSE Tumbleweed | `4.0.9` | ✅ latest |
+| Alpine edge | `3.4.13` | ⚠️ outdated |
+| openSUSE Tumbleweed | `4.0.9` | ⚠️ outdated |
 
 ## 改进这些数据
 
@@ -92,4 +92,4 @@ ruby 的安装元数据由 [x-cmd/install](https://github.com/x-cmd/install) 索
 
 本页面的数据（card / loc / scorecard / release）由 [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) 自动采集，每日重新生成。**安装行为**（版本选择、平台差异、依赖处理）的改进应提交到上游索引。
 
-_数据快照: `data/card/261117.yml` · 2026-11-17T09:53:11Z._
+_数据快照: `data/card/261119.yml` · 2026-11-19T09:02:40Z._
