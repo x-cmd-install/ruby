@@ -14,25 +14,25 @@ x install ruby
 
 ## Code insight
 
-Total: **1,837,707** lines of code across **8677** files in the top 5 languages.
+Total: **1,837,852** lines of code across **8677** files in the top 5 languages.
 
 | Language | Code | Comments | Blanks | Files |
 |----------|-----:|---------:|-------:|------:|
-| Ruby | 1,218,713 | 76,375 | 203,154 | 7494 |
-| C | 365,685 | 99,124 | 58,327 | 536 |
-| Rust | 115,525 | 8,333 | 13,593 | 158 |
-| CHeader | 94,919 | 33,035 | 8,857 | 487 |
+| Ruby | 1,218,795 | 76,377 | 203,172 | 7494 |
+| C | 365,719 | 99,136 | 58,323 | 536 |
+| Rust | 115,550 | 8,334 | 13,596 | 158 |
+| CHeader | 94,923 | 33,035 | 8,857 | 487 |
 | Happy | 14,791 | 0 | 1,624 | 2 |
 
 ## OpenSSF Scorecard
 
-Overall score: **7.3 / 10**
+Overall score: **7.2 / 10**
 
 Lowest-scoring checks:
 
-- **Code-Review** (2/10) — Found 5/21 approved changesets -- score normalized to 2
+- **Code-Review** (1/10) — Found 3/28 approved changesets -- score normalized to 1
 - **Packaging** (-1/10) — packaging workflow not detected
-- **Token-Permissions** (0/10) — detected GitHub workflow tokens with excessive permissions
+- **CII-Best-Practices** (2/10) — badge detected: InProgress
 
 ## Source
 
@@ -43,30 +43,30 @@ Lowest-scoring checks:
 ## Release
 
 - **Latest**: `v4.0.10` (2026-11-18)
-- **Last commit**: 2026-11-19
+- **Last commit**: 2026-11-20
 
 ## Popularity
 
-- **Stars**: 23,828 · **Forks**: 5,687 · **Open issues**: 0 · **Contributors**: 1,157
+- **Stars**: 23,854 · **Forks**: 5,693 · **Open issues**: 0 · **Contributors**: 1,157
 
 ## Totals (cumulative)
 
-- **Releases**: 90 · **Merged PRs**: 14582 · **Open PRs**: 835 · **Closed issues**: 0 · **Open issues**: 0 · **Commits**: 104222
+- **Releases**: 90 · **Merged PRs**: 14595 · **Open PRs**: 850 · **Closed issues**: 0 · **Open issues**: 0 · **Commits**: 104239
 
 ## Recent activity
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-10-20 | 7 | 379 | 143 | 0 | 0 | 1123 |
-| last60d | 2026-09-20 | 9 | 791 | 203 | 0 | 0 | 2471 |
-| 90d | 2026-08-21 | 10 | 1218 | 251 | 0 | 0 | 3843 |
-| last180d | 2026-05-23 | 13 | 2322 | 350 | 0 | 0 | 6740 |
-| 360d | 2025-11-24 | 26 | 3797 | 429 | 0 | 0 | 10291 |
-| last720d | 2024-11-29 | 44 | 6432 | 549 | 0 | 0 | 15363 |
+| 30d | 2026-10-21 | 7 | 378 | 155 | 0 | 0 | 1140 |
+| last60d | 2026-09-21 | 9 | 796 | 216 | 0 | 0 | 2488 |
+| 90d | 2026-08-22 | 10 | 1220 | 264 | 0 | 0 | 3860 |
+| last180d | 2026-05-24 | 13 | 2332 | 365 | 0 | 0 | 6757 |
+| 360d | 2025-11-25 | 26 | 3795 | 444 | 0 | 0 | 10308 |
+| last720d | 2024-11-30 | 44 | 6439 | 564 | 0 | 0 | 15347 |
 
 ## Distribution status
 
-Reported by **845** distros on [repology.org](https://repology.org/project/ruby). **8** are ✅ on the latest upstream release, **540** are ⚠️ on an older version.
+Reported by **851** distros on [repology.org](https://repology.org/project/ruby). **31** are ✅ on the latest upstream release, **520** are ⚠️ on an older version.
 
 | Distro | Version | Status |
 |--------|---------|--------|
@@ -76,10 +76,10 @@ Reported by **845** distros on [repology.org](https://repology.org/project/ruby)
 | Ubuntu 26.04 LTS | `3.3.8` | ⚠️ outdated |
 | Ubuntu 24.04 LTS | `3.2.3` | ⚠️ outdated |
 | Arch | `3.4.12` | ⚠️ outdated |
-| Homebrew | `4.0.10` | ✅ latest |
+| Homebrew | `3.1.7` | 🪦 legacy |
 | Fedora rawhide | `4.0.9` | ⚠️ outdated |
 | Nix unstable | `3.4.12` | 🪦 legacy |
-| Void | `3.4.12` | ⚠️ outdated |
+| Void | `3.4.13` | ⚠️ outdated |
 | Alpine edge | `3.4.13` | ⚠️ outdated |
 | openSUSE Tumbleweed | `4.0.9` | ⚠️ outdated |
 
@@ -92,4 +92,4 @@ Install metadata for ruby lives in the [x-cmd/install](https://github.com/x-cmd/
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/261119.yml` · 2026-11-19T09:02:39Z._
+_Snapshot: `data/card/261120.yml` · 2026-11-20T07:39:34Z._
